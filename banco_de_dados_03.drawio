@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.2.4">
   <diagram name="Página-1" id="EhjSOb6U6lw5GoyiwGYe">
-    <mxGraphModel dx="1428" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="985" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -205,8 +205,8 @@
         <mxCell id="NGVcZkQ-L_Etc3kx8Qxt-47" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="620" y="510" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="NGVcZkQ-L_Etc3kx8Qxt-48" value="DIAGRAMA ENTIDADE-RELACIONAMENTO: ESCOLA TÉCNICA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="265" y="150" width="600" height="30" as="geometry" />
+        <mxCell id="NGVcZkQ-L_Etc3kx8Qxt-48" value="DIAGRAMA ENTIDADE-RELACIONAMENTO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="255" y="160" width="600" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
