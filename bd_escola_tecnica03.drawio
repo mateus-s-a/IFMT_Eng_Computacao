@@ -1,0 +1,278 @@
+<mxfile host="app.diagrams.net" modified="2025-04-09T15:25:00.000Z" agent="Mozilla/5.0" version="21.0.0" etag="escola-tecnica-er-diagram-v3-pdf" type="device">
+  <diagram id="Escola_Tecnica_ER_V3_PDF" name="Modelo Conceitual - Escola Técnica (PDF)">
+    <mxGraphModel dx="1750" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Entidades -->
+        <mxCell id="E_Aluno" value="Aluno" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_Curso" value="Curso" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_Turma" value="Turma" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_Professor" value="Professor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Atributos de Aluno -->
+        <!-- Adicionando id_aluno como PK implícita para boas práticas -->
+        <mxCell id="A_Aluno_id" value="id_aluno" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4" vertex="1" parent="1">
+             <mxGeometry x="110" y="150" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Aluno_nome" value="nome" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="0" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Aluno_rg" value="RG" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="0" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Aluno_cpf" value="CPF" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="0" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Aluno_nasc" value="data_nascimento" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="0" y="350" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Aluno_email" value="e-mail" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="0" y="400" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Aluno_tel" value="telefones_contato" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="110" y="450" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Aluno_end" value="endereco_residencia" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="220" y="400" width="100" height="50" as="geometry" />
+        </mxCell>
+        <!-- Nota sobre endereço para pesquisa -->
+        <mxCell id="Nota_Endereco_Aluno" value="Nota: Endereço deve conter Bairro/Município para pesquisa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="220" y="455" width="110" height="40" as="geometry" />
+        </mxCell>
+
+
+        <!-- Conexões Atributos de Aluno -->
+        <mxCell id="C_A_Aluno_id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_id">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Aluno_nome" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_nome">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Aluno_rg" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_rg">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Aluno_cpf" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_cpf">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Aluno_nasc" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_nasc">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Aluno_email" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_email">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Aluno_tel" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_tel">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Aluno_end" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="A_Aluno_end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Atributos de Curso -->
+        <mxCell id="A_Curso_cod" value="código_curso" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="590" y="0" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Curso_nome" value="nome" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="710" y="0" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Curso_desc" value="descrição" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="830" y="0" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Curso_cont" value="conteúdo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="890" y="50" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Curso_carga" value="carga_horária" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="890" y="100" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Conexões Atributos de Curso -->
+        <mxCell id="C_A_Curso_cod" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Curso" target="A_Curso_cod">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Curso_nome" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Curso" target="A_Curso_nome">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+         <mxCell id="C_A_Curso_desc" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Curso" target="A_Curso_desc">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+         <mxCell id="C_A_Curso_cont" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Curso" target="A_Curso_cont">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+         <mxCell id="C_A_Curso_carga" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Curso" target="A_Curso_carga">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Atributos de Turma -->
+         <!-- Adicionando id_turma como PK implícita -->
+         <mxCell id="A_Turma_id" value="id_turma" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="840" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Turma_inicio" value="data_inicio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="840" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Turma_fim" value="data_fim" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="840" y="350" width="100" height="40" as="geometry" />
+        </mxCell>
+         <!-- Nota sobre limite de alunos -->
+        <mxCell id="Nota_Limite_Alunos" value="Nota: máx 30 alunos por turma" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="840" y="395" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Conexões Atributos de Turma -->
+         <mxCell id="C_A_Turma_id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Turma" target="A_Turma_id">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Turma_inicio" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Turma" target="A_Turma_inicio">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Turma_fim" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Turma" target="A_Turma_fim">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Atributos de Professor -->
+        <!-- Adicionando id_professor como PK implícita -->
+        <mxCell id="A_Prof_id" value="id_professor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=4" vertex="1" parent="1">
+             <mxGeometry x="840" y="470" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Prof_nome" value="nome" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="840" y="520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Prof_nasc" value="data_nascimento" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="840" y="570" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Prof_rg" value="RG" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="710" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Prof_cpf" value="CPF" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="590" y="570" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Prof_email" value="e-mail" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="590" y="520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Prof_tel" value="telefones_contato" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="590" y="470" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Prof_end" value="endereco_residencia" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="710" y="660" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Conexões Atributos de Professor -->
+        <mxCell id="C_A_Prof_id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_id">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Prof_nome" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_nome">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Prof_nasc" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_nasc">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Prof_rg" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_rg">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Prof_cpf" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_cpf">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Prof_email" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_email">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Prof_tel" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_tel">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_A_Prof_end" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="A_Prof_end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Relacionamentos -->
+        <mxCell id="R_Matricula" value="Matricula" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Oferecimento" value="Oferecimento" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="700" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_Ministra" value="Ministra" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="700" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Atributos de Relacionamento Matricula -->
+         <mxCell id="AR_Matricula_status" value="status_aprovacao" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AR_Matricula_media" value="media_notas" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Conexões Atributos de Matricula -->
+         <mxCell id="C_AR_Matricula_status" value="" style="endArrow=none;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="R_Matricula" target="AR_Matricula_status">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="C_AR_Matricula_media" value="" style="endArrow=none;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="R_Matricula" target="AR_Matricula_media">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Conexões Entidade-Relacionamento -->
+        <!-- Aluno <-> Matricula -->
+        <mxCell id="C_E_Aluno_R_Matricula" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Aluno" target="R_Matricula">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="Card_E_Aluno_R_Matricula" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="305" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Matricula <-> Turma -->
+        <mxCell id="C_R_Matricula_E_Turma" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="R_Matricula" target="E_Turma">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+         <mxCell id="Card_R_Matricula_E_Turma" value="M" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="305" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Curso <-> Oferecimento -->
+        <mxCell id="C_E_Curso_R_Oferecimento" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Curso" target="R_Oferecimento">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="Card_E_Curso_R_Oferecimento" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="160" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Oferecimento <-> Turma -->
+        <mxCell id="C_R_Oferecimento_E_Turma" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="R_Oferecimento" target="E_Turma">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="Card_R_Oferecimento_E_Turma" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="260" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Professor <-> Ministra -->
+        <mxCell id="C_E_Professor_R_Ministra" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="E_Professor" target="R_Ministra">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+         <mxCell id="Card_E_Professor_R_Ministra" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="480" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Ministra <-> Turma -->
+        <mxCell id="C_R_Ministra_E_Turma" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="R_Ministra" target="E_Turma">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="Card_R_Ministra_E_Turma" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="380" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Título do Diagrama -->
+        <mxCell id="Title" value="DIAGRAMA ENTIDADE-RELACIONAMENTO: ESCOLA TÉCNICA (PDF)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
