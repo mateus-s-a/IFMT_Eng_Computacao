@@ -1,16 +1,13 @@
 package test;
 
-import domain.Funcionario;
+import domain.FuncionarioManager;
 import domain.Menu;
 
 public class Main {
     public static void main(String[] args) {
-        Funcionario[] funcionarios = new Funcionario[10];
-        Menu menu = new Menu();
+        FuncionarioManager funcionarioManager = new FuncionarioManager(10);
+        Menu menu = new Menu(funcionarioManager);
 
         menu.exibirMenu();
-
-        System.out.println(funcionarios[0].nome);
-        System.out.println(funcionarios[1].nome);
     }
 }

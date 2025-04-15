@@ -17,7 +17,7 @@ public class Teclado {
         return input.nextDouble();
     }
 
-    public static String nextLine() {
-        return input.nextLine();
+    public static void nextLine() {
+        input.nextLine();
     }
 }

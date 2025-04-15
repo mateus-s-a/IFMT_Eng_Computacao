@@ -1,6 +1,12 @@
 package domain;
 
 public class Menu {
+    private FuncionarioManager funcionarioManager;
+
+    public Menu(FuncionarioManager funcionarioManager) {
+        this.funcionarioManager = funcionarioManager;
+    }
+
     public void exibirMenu() {
         int opcao;
 
@@ -16,13 +22,16 @@ public class Menu {
 
             switch (opcao) {
                 case 1:
-                    Funcionario.cadastrarFuncionario();
+                    funcionarioManager.cadastrarFuncionario();
                     break;
                 case 2:
+                    funcionarioManager.atualizarFuncionario();
                     break;
                 case 3:
+                    funcionarioManager.excluirFuncionario();
                     break;
                 case 4:
+                    funcionarioManager.consultarTodosFuncionario();
                     break;
                 case 5:
                     System.out.println("\nSaindo...");
