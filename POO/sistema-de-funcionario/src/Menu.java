@@ -1,5 +1,5 @@
 public class Menu {
-    public static void menuPrincipal() {
+    public static void menuPrincipal(Funcionario[] funcionarios) {
         int opcao;
 
         do {
@@ -13,15 +13,19 @@ public class Menu {
 
             switch (opcao) {
                 case 1:
+                    FuncionarioManager.insercaoFuncionario(funcionarios); // passará o array de funcionários para receber o novo funcionário inserido
                     break;
 
                 case 2:
+                    FuncionarioManager.atualizacaoFuncionario();
                     break;
 
                 case 3:
+                    FuncionarioManager.exclusaoFuncionario();
                     break;
 
                 case 4:
+                    FuncionarioManager.consultaFuncionario();
                     break;
 
                 case 0:
