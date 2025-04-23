@@ -1,3 +1,4 @@
+// esta classe serve para criar um novo funcionário (inserção)
 public class Funcionario {
     int matricula;
     String nome;
