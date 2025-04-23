@@ -15,7 +15,7 @@ public class FuncionarioManager {
 
         // caso não encontre uma posição vazia
         if (posicao == -1) {
-            System.out.println("\nNão há espaços para novos funcionários.\n");
+            System.out.println("Não há espaços para novos funcionários.\n");
             return;
         }
 
@@ -29,25 +29,71 @@ public class FuncionarioManager {
         // o verdadeiro array de funcionários recebe agora este funcionário na posição vazia (null)
         funcionarios[posicao] = novoFuncionario;
 
-        System.out.println("\nFuncionário cadastrado com sucesso.");
+        System.out.println("\nFuncionário cadastrado com sucesso.\n");
         System.out.println("Matrícula: " + proximaMatricula);
         proximaMatricula++;
     }
 
-    public static void atualizacaoFuncionario() {
+    public static void atualizacaoFuncionario(Funcionario[] funcionarios) {
         System.out.println("\n=== ATUALIZAÇÃO ===\n");
+        int getMatricula = Teclado.lerInteiro("Matrícula a ser atualizada: ");
+
+        int posicao = -1;
+        for (int i = 0; i < funcionarios.length; i++) {
+            if (funcionarios[i] != null &&funcionarios[i].matricula == getMatricula) {
+                posicao = i;
+                break;
+            }
+        }
+
+        if (posicao == -1) {
+            System.out.println("Funcionário não encontrado.\n");
+            return;
+        }
 
         String novoNome = Teclado.lerString("Novo nome: ");
         double novoSalario = Teclado.lerDouble("Novo salário: ");
+
+        funcionarios[posicao].nome = novoNome;
+        funcionarios[posicao].salario = novoSalario;
+
+        System.out.println("\nFuncionário atualizado com sucesso.\n");
     }
 
-    public static void exclusaoFuncionario() {
+    public static void exclusaoFuncionario(Funcionario[] funcionarios) {
         System.out.println("\n=== EXCLUSÃO ===\n");
-        Teclado.lerInteiro("Matrícula para exclusão: ");
+        int getMatricula = Teclado.lerInteiro("Matrícula para exclusão: ");
+
+        int posicao = -1;
+        for (int i = 0; i < funcionarios.length; i++) {
+            if (funcionarios[i] != null && funcionarios[i].matricula == getMatricula) {
+                posicao = i;
+                break;
+            }
+        }
+
+        if (posicao == -1) {
+            System.out.println("Funcionário não encontrado.\n");
+            return;
+        }
+
+        funcionarios[posicao] = null; // deixa o funcionário como (null), ou seja, indisponível para acessá-lo (excluído)
+        System.out.println("\nFuncionário excluído com sucesso.\n");
     }
 
-    public static void consultaFuncionario() {
+    public static void consultaFuncionario(Funcionario[] funcionarios) {
         System.out.println("\n=== CONSULTA ===\n");
-        Teclado.lerInteiro("Matrícula para consulta: ");
+        int getMatricula = Teclado.lerInteiro("Matrícula para consulta: ");
+
+        for (Funcionario funcionario : funcionarios) {
+            if (funcionario != null && funcionario.matricula == getMatricula) {
+                System.out.println("\nMatrícula: " + funcionario.matricula);
+                System.out.println("Nome.....: " + funcionario.nome);
+                System.out.println("Salário..: R$ " + funcionario.salario);
+                return;
+            }
+        }
+
+        System.out.println("Funcionário não encontrado.\n");
     }
 }

@@ -17,15 +17,15 @@ public class Menu {
                     break;
 
                 case 2:
-                    FuncionarioManager.atualizacaoFuncionario();
+                    FuncionarioManager.atualizacaoFuncionario(funcionarios);
                     break;
 
                 case 3:
-                    FuncionarioManager.exclusaoFuncionario();
+                    FuncionarioManager.exclusaoFuncionario(funcionarios);
                     break;
 
                 case 4:
-                    FuncionarioManager.consultaFuncionario();
+                    FuncionarioManager.consultaFuncionario(funcionarios);
                     break;
 
                 case 0:
