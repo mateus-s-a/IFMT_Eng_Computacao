@@ -1,9 +1,94 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.14">
-  <diagram name="Página-1" id="KTjSnEqx7MfLvVBHze_W">
-    <mxGraphModel dx="742" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2025-05-02T08:44:00.000Z" agent="5.0 (Windows)" etag="abcd1234" version="14.6.13" type="device">
+  <diagram id="ERD1" name="ER_Diagram">
+    <mxGraphModel dx="1024" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Fornecedor -->
+        <mxCell id="2" value="Fornecedor
+PK id_fornecedor
+nome_fornecedor" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- GrupoProduto -->
+        <mxCell id="3" value="GrupoProduto
+PK id_grupo
+nome_grupo" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff" vertex="1" parent="1">
+          <mxGeometry x="240" y="220" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Produto -->
+        <mxCell id="4" value="Produto
+PK id_produto
+nome_produto
+qtd_estoque
+preco_venda
+FK id_fornecedor
+FK id_grupo" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Venda -->
+        <mxCell id="5" value="Venda
+PK id_venda
+data_venda
+hora_venda
+valor_total
+valor_imposto" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- ItemVenda (associativa) -->
+        <mxCell id="6" value="ItemVenda
+PK (id_venda, id_produto)
+FK id_venda
+FK id_produto
+quantidade_vendida
+subtotal" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff" vertex="1" parent="1">
+          <mxGeometry x="240" y="380" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- DocumentoFiscal -->
+        <mxCell id="7" value="DocumentoFiscal
+PK numero_nota
+serie
+data_venda
+hora_venda
+valor_total
+valor_imposto
+FK id_venda" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff" vertex="1" parent="1">
+          <mxGeometry x="40" y="380" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges / Relationships -->
+
+        <!-- Fornecedor 1 - N Produto -->
+        <mxCell id="8" value="1 :N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=none;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- GrupoProduto 1 - N Produto -->
+        <mxCell id="9" value="1 :N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=none;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Venda 1 - N ItemVenda -->
+        <mxCell id="10" value="1 :N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=none;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Produto 1 - N ItemVenda -->
+        <mxCell id="11" value="1 :N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=none;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Venda 1 - 1 DocumentoFiscal -->
+        <mxCell id="12" value="1 : 1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=none;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
