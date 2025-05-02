@@ -1,278 +1,85 @@
-<mxfile host="app.diagrams.net" modified="2025-05-02T12:47:00.000Z" agent="Mozilla/5.0" etag="MqYVCTSuXREVrSoZTlLZ" version="24.0.4">
-  <diagram id="ERDiagram-LojadeConveniencia" name="Modelo ER">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-05-02T12:00:00.000Z" agent="5.0">
+  <diagram id="ER_Loja" name="Modelo ER - Loja de Conveniência">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
         
-        <!-- Entidades -->
-        <mxCell id="entity_produto" value="Produto" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="320" y="200" width="120" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="entity_fornecedor" value="Fornecedor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="80" y="200" width="120" height="60" as="geometry" />
+        <!-- Entidade: Supplier -->
+        <mxCell id="3" value="&lt;&lt;Entity&gt;&gt;&#xa;Supplier&#xa;--Attributes--&#xa;supplier_id (PK)&#xa;name" 
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;" 
+                vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="160" height="100" as="geometry"/>
         </mxCell>
         
-        <mxCell id="entity_grupo" value="Grupo_Produto" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="320" y="40" width="120" height="60" as="geometry" />
+        <!-- Entidade: ProductGroup -->
+        <mxCell id="4" value="&lt;&lt;Entity&gt;&gt;&#xa;ProductGroup&#xa;--Attributes--&#xa;group_id (PK)&#xa;group_name" 
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=12;" 
+                vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="160" height="100" as="geometry"/>
         </mxCell>
         
-        <mxCell id="entity_venda" value="Venda" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="320" y="360" width="120" height="60" as="geometry" />
+        <!-- Entidade: Product -->
+        <mxCell id="2" value="&lt;&lt;Entity&gt;&gt;&#xa;Product&#xa;--Attributes--&#xa;product_id (PK)&#xa;name&#xa;quantity_in_stock&#xa;sale_price&#xa;supplier_id (FK)&#xa;group_id (FK)" 
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" 
+                vertex="1" parent="1">
+          <mxGeometry x="260" y="100" width="200" height="140" as="geometry"/>
         </mxCell>
         
-        <mxCell id="entity_item_venda" value="Item_Venda" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="520" y="200" width="120" height="60" as="geometry" />
+        <!-- Entidade: Sale -->
+        <mxCell id="5" value="&lt;&lt;Entity&gt;&gt;&#xa;Sale&#xa;--Attributes--&#xa;sale_id (PK)&#xa;date&#xa;time&#xa;total_value&#xa;tax_value" 
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" 
+                vertex="1" parent="1">
+          <mxGeometry x="260" y="300" width="200" height="120" as="geometry"/>
         </mxCell>
         
-        <mxCell id="entity_documento" value="Documento_Fiscal" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="560" y="360" width="120" height="60" as="geometry" />
+        <!-- Entidade Associativa: SaleItem -->
+        <mxCell id="6" value="&lt;&lt;Associative&gt;&gt;&#xa;SaleItem&#xa;--Attributes--&#xa;sale_id (FK)&#xa;product_id (FK)&#xa;quantity_sold&#xa;subtotal" 
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=12;" 
+                vertex="1" parent="1">
+          <mxGeometry x="520" y="220" width="200" height="120" as="geometry"/>
         </mxCell>
         
-        <!-- Relacionamentos -->
-        <mxCell id="rel_fornecedor_produto" value="Fornece" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="220" y="190" width="80" height="80" as="geometry" />
+        <!-- Entidade: FiscalDocument -->
+        <mxCell id="7" value="&lt;&lt;Entity&gt;&gt;&#xa;FiscalDocument&#xa;--Attributes--&#xa;document_id (PK)&#xa;doc_number&#xa;doc_series&#xa;date&#xa;time&#xa;total_value&#xa;tax_value&#xa;sale_id (FK)" 
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;" 
+                vertex="1" parent="1">
+          <mxGeometry x="520" y="380" width="220" height="160" as="geometry"/>
         </mxCell>
         
-        <mxCell id="rel_grupo_produto" value="Pertence" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="340" y="120" width="80" height="60" as="geometry" />
+        <!-- Relacionamentos / Conectores -->
+        <!-- Supplier 1:N Product -->
+        <mxCell id="8" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#000000;fontSize=10;align=center;" 
+                edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ProductGroup 1:N Product -->
+        <mxCell id="9" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#000000;fontSize=10;align=center;" 
+                edge="1" parent="1" source="4" target="2">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         
-        <mxCell id="rel_produto_item" value="Compõe" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="440" y="190" width="80" height="80" as="geometry" />
+        <!-- Sale 1:N SaleItem -->
+        <mxCell id="10" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#000000;fontSize=10;align=center;" 
+                edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         
-        <mxCell id="rel_venda_item" value="Contém" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="540" y="280" width="80" height="60" as="geometry" />
+        <!-- Product 1:N SaleItem -->
+        <mxCell id="11" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#000000;fontSize=10;align=center;" 
+                edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Sale 1:1 FiscalDocument -->
+        <mxCell id="12" value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#000000;fontSize=10;align=center;" 
+                edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         
-        <mxCell id="rel_venda_documento" value="Associado a" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="460" y="350" width="80" height="80" as="geometry" />
-        </mxCell>
-        
-        <!-- Conexões -->
-        <mxCell id="conn_fornecedor_rel" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="entity_fornecedor" target="rel_fornecedor_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_rel_produto" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rel_fornecedor_produto" target="entity_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn_grupo_rel" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="entity_grupo" target="rel_grupo_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_rel_grupo_produto" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rel_grupo_produto" target="entity_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn_produto_rel_item" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="entity_produto" target="rel_produto_item">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_rel_item" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rel_produto_item" target="entity_item_venda">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn_venda_rel_item" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rel_venda_item" target="entity_item_venda">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn_dummy_rel_item" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rel_venda_item" target="entity_venda">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="580" y="390" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn_venda_rel_documento" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="entity_venda" target="rel_venda_documento">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_rel_documento" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rel_venda_documento" target="entity_documento">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Cardinalidade -->
-        <mxCell id="card_fornecedor_1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="200" y="210" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="card_produto_n" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="300" y="210" width="20" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="card_grupo_1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="380" y="100" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="card_produto_n2" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="380" y="180" width="20" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="card_produto_1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="440" y="210" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="card_item_n" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="500" y="210" width="20" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="card_item_n2" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="580" y="260" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="card_venda_1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="440" y="390" width="20" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="card_venda_1_2" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="440" y="370" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="card_documento_1" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="540" y="370" width="20" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Atributos -->
-        <!-- Produto -->
-        <mxCell id="attr_produto_codigo" value="&lt;u&gt;codigo_produto&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="240" y="140" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_produto_nome" value="nome_produto" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="330" y="120" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_produto_qtd" value="quantidade_estoque" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="410" y="140" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_produto_preco" value="preco_venda" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="440" y="180" width="80" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- Fornecedor -->
-        <mxCell id="attr_fornecedor_id" value="&lt;u&gt;id_fornecedor&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="40" y="140" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_fornecedor_nome" value="nome_fornecedor" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="140" y="140" width="100" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- Grupo_Produto -->
-        <mxCell id="attr_grupo_id" value="&lt;u&gt;id_grupo&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="280" y="0" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_grupo_nome" value="nome_grupo" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="400" y="0" width="80" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- Venda -->
-        <mxCell id="attr_venda_id" value="&lt;u&gt;id_venda&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="240" y="360" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_venda_data" value="data_venda" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="260" y="420" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_venda_hora" value="hora_venda" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="340" y="420" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_venda_total" value="valor_total" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="420" y="420" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_venda_imposto" value="valor_imposto" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="380" y="320" width="100" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- Item_Venda -->
-        <mxCell id="attr_item_venda_qtd" value="quantidade_vendida" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="520" y="140" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_item_venda_subtotal" value="subtotal" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="640" y="140" width="80" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- Documento_Fiscal -->
-        <mxCell id="attr_documento_numero" value="&lt;u&gt;numero_nota&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="530" y="300" width="90" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_documento_serie" value="&lt;u&gt;serie_nota&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="630" y="300" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_documento_data" value="data_venda" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="690" y="330" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_documento_hora" value="hora_venda" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="690" y="380" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_documento_total" value="valor_total" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="620" y="420" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="attr_documento_imposto" value="valor_imposto" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="530" y="420" width="80" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- Conexões de atributos -->
-        <!-- Produto -->
-        <mxCell id="conn_produto_codigo" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="attr_produto_codigo" target="entity_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_produto_nome" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="attr_produto_nome" target="entity_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_produto_qtd" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="attr_produto_qtd" target="entity_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_produto_preco" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="attr_produto_preco" target="entity_produto">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Fornecedor -->
-        <mxCell id="conn_fornecedor_id" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="attr_fornecedor_id" target="entity_fornecedor">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="conn_fornecedor_nome" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="attr_fornecedor_nome" target="entity_fornecedor">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="330" as="sourcePoint" />
-            <mxPoint x="440" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Grupo_Produto -->
-        <mxCell id="conn_grupo_id" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
