@@ -33,6 +33,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-74" value="Físico" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="q8nthipqPMk74v-ilzVn-73">
+          <mxGeometry x="0.5233" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-59" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="296" y="70" width="236" height="310" as="geometry" />
         </mxCell>
