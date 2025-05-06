@@ -59,8 +59,14 @@
         <mxCell id="q8nthipqPMk74v-ilzVn-66" value="Representa estruturas e relacionamentos com modelos específicos (relacional), independente do SGBD)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="300" y="550" width="228" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="q8nthipqPMk74v-ilzVn-71" target="q8nthipqPMk74v-ilzVn-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-71" value="Trata de como os dados são armazenados e acessado em um SGBD específico" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="610" y="550" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-81" value="nível mais baixo de abstração" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="380" width="170" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
