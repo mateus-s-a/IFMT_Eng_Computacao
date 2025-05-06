@@ -4,8 +4,11 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="q8nthipqPMk74v-ilzVn-58" value="&lt;div&gt;Níveis de Abstração&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="90" width="120" height="70" as="geometry" />
+        <mxCell id="q8nthipqPMk74v-ilzVn-59" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="296" y="70" width="236" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-60" value="Níveis de Abstração" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="351" y="90" width="126" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
