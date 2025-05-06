@@ -1,9 +1,15 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" version="26.2.14">
   <diagram name="Página-1" id="x7pmjmnGV-Pn86RtIntv">
-    <mxGraphModel dx="647" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="544" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="q8nthipqPMk74v-ilzVn-78" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="550" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-75" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="550" width="170" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="q8nthipqPMk74v-ilzVn-59" target="q8nthipqPMk74v-ilzVn-64">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -54,10 +60,10 @@
           <mxGeometry x="310" y="300" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-64" value="Representa entidades e relacionamentos sem detalhes técnicos (abstrato)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="30" y="550" width="190" height="50" as="geometry" />
+          <mxGeometry x="30" y="550" width="190" height="55" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-66" value="Representa estruturas e relacionamentos com modelos específicos (relacional), independente do SGBD)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="300" y="550" width="228" height="50" as="geometry" />
+          <mxGeometry x="300" y="550" width="228" height="55" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-71" value="Trata de como os dados são armazenados e acessado em um SGBD específico" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="610" y="550" width="170" height="50" as="geometry" />
