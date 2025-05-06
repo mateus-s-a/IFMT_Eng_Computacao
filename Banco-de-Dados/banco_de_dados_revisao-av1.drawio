@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" version="26.2.14">
   <diagram name="Página-1" id="x7pmjmnGV-Pn86RtIntv">
-    <mxGraphModel dx="544" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="789" dy="906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,14 +59,8 @@
         <mxCell id="q8nthipqPMk74v-ilzVn-66" value="Representa estruturas e relacionamentos com modelos específicos (relacional), independente do SGBD)" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="300" y="550" width="228" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="q8nthipqPMk74v-ilzVn-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="q8nthipqPMk74v-ilzVn-71" target="q8nthipqPMk74v-ilzVn-81">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-71" value="Trata de como os dados são armazenados e acessado em um SGBD específico" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="610" y="550" width="170" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="q8nthipqPMk74v-ilzVn-81" value="nível mais baixo de abstração" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="840" y="380" width="170" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
