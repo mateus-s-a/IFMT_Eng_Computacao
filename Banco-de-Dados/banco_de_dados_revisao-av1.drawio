@@ -201,19 +201,19 @@
           <mxGeometry x="-2080" y="-1400" width="440" height="70" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-168" value="Entidade" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-2200" y="-1210" width="120" height="120" as="geometry" />
+          <mxGeometry x="-2220" y="-1210" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-169" value="Relacionamentos" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-2140" y="-1070" width="120" height="120" as="geometry" />
+          <mxGeometry x="-2160" y="-1070" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-170" value="Ocorrência de Entidade" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-2080" y="-930" width="120" height="120" as="geometry" />
+          <mxGeometry x="-2100" y="-930" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-171" value="Ocorrência de Relacionamento" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-2020" y="-790" width="120" height="120" as="geometry" />
+          <mxGeometry x="-2040" y="-790" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-172" value="Atributos" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-1960" y="-650" width="120" height="120" as="geometry" />
+          <mxGeometry x="-1980" y="-650" width="120" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
