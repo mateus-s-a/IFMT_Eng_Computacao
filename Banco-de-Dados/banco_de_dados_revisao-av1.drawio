@@ -224,8 +224,11 @@
         <mxCell id="q8nthipqPMk74v-ilzVn-175" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Instância específica de um tipo de entidade&lt;br&gt; &lt;b&gt;(ex: o cliente &quot;João Silva&quot;)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1705" y="-895" width="300" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="q8nthipqPMk74v-ilzVn-176" value="&lt;font style=&quot;font-size: 14px;&quot;&gt; Associações entre duas ou mais entidades &lt;b&gt;(ex: Cliente compra Produto)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1750" y="-350" width="290" height="50" as="geometry" />
+        <mxCell id="q8nthipqPMk74v-ilzVn-176" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Instância específica de um relacionamento conectando ocorrências de entidades&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1700" y="-755" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-177" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Atributo(s) que identifica(m) unicamente cada ocorrência de entidade&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1700" y="-615" width="290" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
