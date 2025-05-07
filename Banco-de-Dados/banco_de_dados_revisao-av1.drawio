@@ -155,6 +155,9 @@
         <mxCell id="q8nthipqPMk74v-ilzVn-138" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;DDL&lt;/b&gt; (Data Definition Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="242.5" y="-1850" width="285" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="q8nthipqPMk74v-ilzVn-139" target="q8nthipqPMk74v-ilzVn-155">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-139" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;DQL&lt;/b&gt; (Data Query Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-210" y="-1710" width="285" height="70" as="geometry" />
         </mxCell>
@@ -166,6 +169,9 @@
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-142" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;DCL&lt;/b&gt; (Data Control Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="-1420" width="285" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-155" value="Define estruturas&lt;br&gt;(CREATE, ALTER DROP)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="-1732.5" width="200" height="115" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
