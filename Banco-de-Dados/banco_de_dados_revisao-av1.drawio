@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" version="26.2.14">
   <diagram name="Página-1" id="x7pmjmnGV-Pn86RtIntv">
-    <mxGraphModel dx="2531" dy="3345" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2868" dy="3732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -135,10 +135,22 @@
           <mxGeometry x="888.5" y="260" width="179" height="30" as="geometry" />
         </mxCell>
         <mxCell id="q8nthipqPMk74v-ilzVn-129" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;SQL e Suas Subdivisões&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="-1640" width="310" height="70" as="geometry" />
+          <mxGeometry x="230" y="-1620" width="310" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="q8nthipqPMk74v-ilzVn-135" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="-1480" width="410" height="390" as="geometry" />
+        <mxCell id="q8nthipqPMk74v-ilzVn-138" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DDL (Data Definition Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242.5" y="-1850" width="285" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-139" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DQL (Data Query Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="-1710" width="285" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-140" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DTL/TCL (Data Transaction Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690.25" y="-1710" width="285" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-141" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DML (Data Manipulation Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-1420" width="285" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="q8nthipqPMk74v-ilzVn-142" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DCL (Data Control Language)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-1420" width="285" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
