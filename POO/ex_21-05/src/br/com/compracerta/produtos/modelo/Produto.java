@@ -41,7 +41,7 @@ public class Produto {
         this.preco = preco;
     }
 
-    public void setQtd_estoque(int qtd_estoque) {
+    public void setQtdEstoque(int qtd_estoque) {
         this.qtd_estoque = qtd_estoque;
     }
 }

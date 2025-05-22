@@ -38,7 +38,7 @@ public class ProdutoManager {
 
         System.out.print("\n");
         System.out.println("Produto inserido com sucesso.");
-        System.out.printf("\tID.............: %d\n", totalDeProdutos);
+        System.out.printf("\tID.............: %d\n", idAux);
         System.out.printf("\tDescrição......: %s\n", descricaoAux);
         System.out.printf("\tPreço..........: %.2f\n", precoAux);
         System.out.printf("\tQtd. de Estoque: %d\n\n", qtdEstoqueAux);
@@ -80,7 +80,7 @@ public class ProdutoManager {
 
         produtos[indice].setDescricao(novaDescricaoAux);
         produtos[indice].setPreco(novoPrecoAux);
-        produtos[indice].setQtd_estoque(novoQtdEstoqueAux);
+        produtos[indice].setQtdEstoque(novoQtdEstoqueAux);
 
         System.out.print("\n");
         System.out.println("Produto alterado com sucesso.");
@@ -158,5 +158,14 @@ public class ProdutoManager {
             }
         }
         return -1;
+    }
+
+    public int getValorTotalEstoque() {
+        int tot = 0;
+
+        for (int i = 0; i < totalDeProdutos; i++) {
+            tot += produtos[i].getQtdEstoque();
+        }
+        return tot;
     }
 }

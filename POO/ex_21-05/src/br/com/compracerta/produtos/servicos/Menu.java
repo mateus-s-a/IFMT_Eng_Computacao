@@ -42,6 +42,7 @@ public class Menu {
                 case 0:
                     System.out.print("\n");
                     System.out.println("Encerrando programa...");
+                    System.out.printf("\nQtd. Estoque Total = %d", produtoManager.getValorTotalEstoque());
                     break;
 
                 default:
