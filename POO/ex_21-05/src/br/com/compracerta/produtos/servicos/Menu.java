@@ -17,6 +17,7 @@ public class Menu {
             System.out.println("2. Alterar Produto");
             System.out.println("3. Excluir Produto");
             System.out.println("4. Consultar Produto");
+            System.out.println("5. Exibir Qtd. Total Estoque");
             System.out.println("0. Encerrar");
             System.out.print("\n");
             System.out.print("Opção: ");
@@ -39,10 +40,13 @@ public class Menu {
                     produtoManager.consultarTodosProdutos();
                     break;
 
+                case 5:
+                    System.out.printf("\nQtd. Estoque Total = %d unidades\n\n", produtoManager.getValorTotalEstoque());
+                    break;
+
                 case 0:
                     System.out.print("\n");
                     System.out.println("Encerrando programa...");
-                    System.out.printf("\nQtd. Estoque Total = %d", produtoManager.getValorTotalEstoque());
                     break;
 
                 default:
