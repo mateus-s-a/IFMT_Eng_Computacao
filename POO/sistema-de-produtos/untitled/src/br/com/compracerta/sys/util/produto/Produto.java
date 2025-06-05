@@ -44,4 +44,28 @@ public class Produto {
     public void setQtdEstoque(int qtdEstoque) {
         this.qtdEstoque = qtdEstoque;
     }
+
+    public double calcularPrecoFinal() {
+        return this.preco;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id +
+                "\nDescrição: " + descricao +
+                "\nPreço: " + preco +
+                "\nQuantidade: " + qtdEstoque +
+                "\nPreço Final: " + calcularPrecoFinal();
+    }
+
+    public static double calcularEstoque(Produto[] produtos) {
+        double total = 0.0;
+
+        for (Produto p : produtos) {
+            if (p != null) {
+                total += p.calcularPrecoFinal() * p.getQtdEstoque();
+            }
+        }
+        return total;
+    }
 }
