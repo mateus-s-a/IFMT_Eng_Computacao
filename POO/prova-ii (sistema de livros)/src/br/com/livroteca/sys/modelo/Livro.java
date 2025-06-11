@@ -1,6 +1,6 @@
 package br.com.livroteca.sys.modelo;
 
-public class Livro {
+public abstract class Livro {
     private int id;
     private String titulo;
     private double precoBase;
@@ -45,9 +45,7 @@ public class Livro {
         this.qtdEstoque = qtdEstoque;
     }
 
-    public double calcularPrecoFinal() {
-        return precoBase;
-    }
+    public abstract double calcularPrecoFinal();
 
     @Override
     public String toString() {
