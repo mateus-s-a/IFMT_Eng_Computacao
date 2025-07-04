@@ -2,7 +2,7 @@ package domain;
 
 import exception.PrecoInvalidoException;
 
-public class Livro {
+public abstract class Livro {
     private String titulo;
     private String autor;
     private double preco;
@@ -38,6 +38,11 @@ public class Livro {
         }
         this.preco = preco;
     }
+
+    public double getDesconto() {
+        return 0.0; // valor padrão para os ebooks
+    }
+
 
     @Override
     public String toString() {
