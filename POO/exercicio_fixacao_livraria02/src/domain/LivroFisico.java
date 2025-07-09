@@ -1,0 +1,47 @@
+package domain;
+
+import exception.PrecoInvalidoException;
+
+public class LivroFisico extends Livro implements Vendavel {
+    private double peso;
+    private int estoque;
+
+    public LivroFisico(String titulo, String autor, double preco, double peso, int estoque)
+            throws PrecoInvalidoException {
+        super(titulo, autor, preco);
+        this.peso = peso;
+        this.estoque = estoque;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+    public int getEstoque() {
+        return estoque;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
+    }
+
+    public double calcularDesconto() {
+        // SE LIVRO FOR MAIOR QUE 1Kg, 10% SENÃO 5% DE DESCONTO NO MESMO
+        return (peso > 1.0) ? 0.10 : 0.05;
+    }
+
+
+    //
+    @Override
+    public boolean vender() {
+        if (estoque < 0) {
+            return false;
+        }
+        estoque--;
+        return true;
+    }
+
+
+}
