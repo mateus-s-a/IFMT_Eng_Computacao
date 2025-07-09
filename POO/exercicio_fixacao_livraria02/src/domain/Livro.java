@@ -13,7 +13,8 @@ public abstract class Livro {
             throws PrecoInvalidoException {
         this.titulo = titulo;
         this.autor = autor;
-        this.preco = preco;
+        // O SETPRECO() POSSUI UMA EXCEÇÃO QUE PRECISA SER VERIFICADA ANTES DE SER ATRIBUÍDA POR COMPLETO NO CONSTRUTOR
+        setPreco(preco);
     }
 
     public String getTitulo() {
@@ -33,11 +34,22 @@ public abstract class Livro {
         this.autor = autor;
     }
     public void setPreco(double preco)
-            throws PrecoInvalidoException {
+            throws PrecoInvalidoException{
         if (preco < 0) {
             throw new PrecoInvalidoException(
-                "\nPreço não pode ser negativo: " + preco
+                    " Preço não pode ser negativo."
             );
         }
+        this.preco = preco;
+    }
+
+    public double getDesconto() {
+        return 0.0; // VALOR PADRÃO
+    }
+
+
+    @Override
+    public String toString() {
+        return titulo + "(" + autor + "): R$ " + preco;
     }
 }

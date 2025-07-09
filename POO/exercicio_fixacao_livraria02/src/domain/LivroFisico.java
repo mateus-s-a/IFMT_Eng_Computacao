@@ -33,7 +33,12 @@ public class LivroFisico extends Livro implements Vendavel {
     }
 
 
-    //
+
+    @Override
+    public double getDesconto() {
+        return calcularDesconto();
+    }
+
     @Override
     public boolean vender() {
         if (estoque < 0) {
@@ -43,5 +48,11 @@ public class LivroFisico extends Livro implements Vendavel {
         return true;
     }
 
-
+    @Override
+    public String toString() { // [ FÍSICO | peso Kg | estoque | % de Desconto ]
+        return super.toString() + " [ FÍSICO | " +
+                peso + "Kg | " +
+                estoque + " Unidades | " +
+                (calcularDesconto() * 100) + "% de Desconto";
+    }
 }
