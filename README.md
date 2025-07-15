@@ -1,33 +1,33 @@
-# IFMT Computer Engineering Coursework Repository
+# Repositório de Trabalhos de Curso de Engenharia de Computação do IFMT
 
-This repository contains structured course material for the **Computer Engineering program at IFMT (Instituto Federal de Mato Grosso)**, organized by subject for study and academic purposes.
+Este repositório contém material didático estruturado do curso de **Engenharia da Computação do IFMT (Instituto Federal de Mato Grosso)**, organizado por disciplina para fins acadêmicos e de estudo.
 
-## Repository Structure
+## Estrutura do repositório
 
-The contents are organized into the following folders by subject:
+Os conteúdos estão organizados nas seguintes pastas por assunto:
 
 ### 📊 **Banco-de-Dados** (Database)
-Contains database-related coursework including database design, SQL queries, and database management concepts. Materials focus on relational database principles and practical applications.
+Contém cursos relacionados a banco de dados, incluindo design de banco de dados, consultas SQL e conceitos de gerenciamento de banco de dados. Os materiais se concentram em princípios de bancos de dados relacionais e aplicações práticas.
 
 ### 🔗 **Estrutura-de-Dados** (Data Structures)
 Includes implementations and studies of fundamental data structures such as linked lists, stacks, queues, trees, and graphs. Contains both theoretical concepts and practical coding exercises.
 
 ### 🎯 **POO** (Object-Oriented Programming)
-Object-oriented programming coursework covering classes, objects, inheritance, polymorphism, encapsulation, and abstraction. Includes practical projects demonstrating OOP principles.
+Curso de programação orientada a objetos que abrange classes, objetos, herança, polimorfismo, encapsulamento e abstração. Inclui projetos práticos que demonstram os princípios da OOP.
 
 ### 💻 **Sistemas-Operacionais** (Operating Systems)
-Operating systems concepts and implementations including process management, memory management, file systems, and system calls. Contains theoretical studies and practical exercises.
+Conceitos e implementações de sistemas operacionais, incluindo gerenciamento de processos, gerenciamento de memória, sistemas de arquivos e chamadas de sistema. Contém estudos teóricos e exercícios práticos.
 
-## Programming Languages
+## Linguagens de programação
 
-The repository materials are primarily implemented in:
-- **Java** (65.4%)
-- **C** (34.6%)
+Os materiais do repositório são implementados principalmente em:
+- `Java` (65,4%)
+- `C` (34.6%)
 
-## Purpose
+## Objetivo
 
-This repository serves as a comprehensive collection of academic materials for study and reference purposes. All content is organized to support learning and understanding of fundamental computer engineering concepts.
+Este repositório serve como uma coleção abrangente de materiais acadêmicos para fins de estudo e referência. Todo o conteúdo é organizado para apoiar o aprendizado e a compreensão dos conceitos fundamentais de engenharia da computação.
 
 ---
 
-*For academic use only - IFMT Computer Engineering Program*
+*Apenas para uso acadêmico - Programa de Engenharia da Computação do IFMT*
