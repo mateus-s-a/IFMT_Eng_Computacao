@@ -34,6 +34,8 @@ public class JogoDigital extends Jogo {
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + " | DIGITAL | " +
+                getTamanhoDownload() + "GB | " +
+                getTipoLicenca() + " ]";
     }
 }

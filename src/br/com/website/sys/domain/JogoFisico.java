@@ -34,7 +34,7 @@ public class JogoFisico extends Jogo {
 
     @Override
     public boolean vender(int quantidade) {
-        if (estoque > quantidade) {
+        if (quantidade > estoque) {
             return false;
         }
         this.estoque = estoque - quantidade;
@@ -43,6 +43,8 @@ public class JogoFisico extends Jogo {
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + " | FÍSICO | " +
+                getPeso() + "g | " +
+                getEstoque() + " unidades ]";
     }
 }

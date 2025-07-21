@@ -49,11 +49,6 @@ public abstract class Jogo implements Vendavel {
 
     @Override
     public String toString() {
-        return "Jogo{" +
-                "id=" + id +
-                ", titulo='" + titulo + '\'' +
-                ", plataforma='" + plataforma + '\'' +
-                ", preco=" + preco +
-                '}';
+        return "[ " + getTitulo() + " | " + getPlataforma() + " | R$ " + getPreco();
     }
 }

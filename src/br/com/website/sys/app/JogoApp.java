@@ -72,7 +72,7 @@ public class JogoApp {
                 if (catalogo[i].vender(quantidade)) {
                     System.out.println("\n**Jogo VENDIDO com êxito**");
                 } else {
-                    System.out.println("\t\n> Erro: venda não concluída, sem quantidade no estoque"); // caso específico para JogoFisico
+                    System.out.println("\t\n> Erro: venda não concluída, quantidade excedeu o estoque"); // caso específico para JogoFisico
                 }
             }
         }

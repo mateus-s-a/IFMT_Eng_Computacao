@@ -20,14 +20,19 @@ public class Main {
             switch (opcao) {
                 case 1:
                     sistema.cadastrarJogo();
+                    break;
                 case 2:
                     sistema.realizarVenda();
+                    break;
                 case 3:
                     sistema.listarJogos();
+                    break;
                 case 4:
                     System.out.println("\nSaindo...");
+                    break;
                 default:
                     System.out.println("\n\t> Erro: opção inválida"); // '\n' '\t' caracteres de escape para break-row e tab, respectivamente
+                    break;
             }
         } while (opcao != 4);
     }
