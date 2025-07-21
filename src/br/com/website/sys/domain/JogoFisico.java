@@ -27,7 +27,7 @@ public class JogoFisico extends Jogo {
     }
 
 
-    private double calcularDesconto() {
+    public double calcularDesconto() {
         return (peso / 100) * 0.025 * getPreco();
     }
 

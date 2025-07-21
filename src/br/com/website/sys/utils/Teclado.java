@@ -9,7 +9,7 @@ public class Teclado {
         return scan.nextLine();
     }
 
-    public static double lerInt(String mensagem) {
+    public static int lerInt(String mensagem) {
         Scanner scan = new Scanner(System.in);
         System.out.println(mensagem);
         return scan.nextInt();
