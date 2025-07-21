@@ -1,6 +1,7 @@
 package br.com.website.sys.app;
 
 import br.com.website.sys.domain.Jogo;
+import br.com.website.sys.domain.JogoDigital;
 import br.com.website.sys.domain.JogoFisico;
 import br.com.website.sys.exceptions.PrecoInvalidoException;
 import br.com.website.sys.utils.Teclado;
@@ -42,7 +43,19 @@ public class JogoApp {
                 }
                 System.out.println("\n\t> Erro: limite de jogos atingido\n"); // quando não mais espaço na lista de catálogo
             } else {
+                double tamanhoDownload = Teclado.lerDouble("Tamanho do Download (MB): ");
+                String tipoLicenca = Teclado.lerString("Tipo de Licença: ");
 
+                JogoDigital novoJogo = new JogoDigital(id, titulo, plataforma, preco, tamanhoDownload, tipoLicenca);
+
+                for (int i = 0; i < catalogo.length; i++) {
+                    if (catalogo[i] == null) {
+                        catalogo[i] = novoJogo;
+                        System.out.println("\n\t**Jogo Digital cadastrado com sucesso.**\n");
+                        return;
+                    }
+                }
+                System.out.println("\n\t> Erro: limite de jogos atingido");
             }
         } catch (PrecoInvalidoException e) {
             System.out.println("\n\t> Ocorreu um erro: " + e.getMessage());
@@ -50,10 +63,28 @@ public class JogoApp {
     }
 
     public void realizarVenda() {
+        listarJogos();
+        int index = Teclado.lerInt("\nDigite o ID do Jogo: ");
+        int quantidade = Teclado.lerInt("Quantidade a ser vendida: ");
 
+        for (int i = 0; i < catalogo.length; i++) {
+            if (catalogo[i] != null && index == catalogo[i].getId()) {
+                if (catalogo[i].vender(quantidade)) {
+                    System.out.println("\n**Jogo VENDIDO com êxito**");
+                } else {
+                    System.out.println("\t\n> Erro: venda não concluída, sem quantidade no estoque"); // caso específico para JogoFisico
+                }
+            }
+        }
     }
 
     public void listarJogos() {
+        System.out.println("\n\t=== LISTAR JOGOS==\n");
 
+        for (int i = 0; i < catalogo.length; i++) {
+            if (catalogo[i] != null) {
+                System.out.println((i+1) + ") " + catalogo[i]);
+            }
+        }
     }
 }
