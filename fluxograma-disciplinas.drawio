@@ -24,35 +24,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-2" value="Fundamentos da Matemática" style="rounded=1;whiteSpace=wrap;html=1;glass=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
-          <mxGeometry x="40" y="290" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-3" value="Desenho Técnico em Ambiente Computacional" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
-          <mxGeometry x="40" y="400" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-4" target="4kvXDWAPBxVA_NMJ1HBV-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-4" value="Cálculo Vetorial e Geometria Analítica" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
-          <mxGeometry x="40" y="510" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-5" value="&lt;div&gt;Química Geral e Ciência dos Materiais&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
-          <mxGeometry x="40" y="620" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-6" target="4kvXDWAPBxVA_NMJ1HBV-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-6" value="Introdução à Engenharia da Computação" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
-          <mxGeometry x="40" y="730" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-7" target="4kvXDWAPBxVA_NMJ1HBV-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-7" value="Algoritmos I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
-          <mxGeometry x="40" y="840" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-8" value="Economia" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="950" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-9" target="4kvXDWAPBxVA_NMJ1HBV-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -450,6 +429,30 @@
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-55" value="Disciplina Eletiva" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="1" vertex="1">
           <mxGeometry x="1440" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-4" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="290" width="120" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-2" value="Fundamentos da Matemática" style="rounded=1;whiteSpace=wrap;html=1;glass=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-3" value="Desenho Técnico em Ambiente Computacional" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
+          <mxGeometry y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-4" value="Cálculo Vetorial e Geometria Analítica" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
+          <mxGeometry y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-5" value="&lt;div&gt;Química Geral e Ciência dos Materiais&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
+          <mxGeometry y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-6" value="Introdução à Engenharia da Computação" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
+          <mxGeometry y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-7" value="Algoritmos I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
+          <mxGeometry y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-8" value="Economia" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
+          <mxGeometry y="660" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
