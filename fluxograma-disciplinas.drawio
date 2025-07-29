@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="1226" dy="1051" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="853" dy="731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -498,6 +498,9 @@
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-55" value="Disciplina Eletiva" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-20" vertex="1">
           <mxGeometry y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-17" target="4kvXDWAPBxVA_NMJ1HBV-29">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
