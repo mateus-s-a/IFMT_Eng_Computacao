@@ -24,8 +24,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-2" value="Fundamentos da Matemática" style="rounded=0;whiteSpace=wrap;html=1;glass=1;shadow=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="300" width="120" height="60" as="geometry" />
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-2" value="Fundamentos da Matemática" style="rounded=1;whiteSpace=wrap;html=1;glass=1;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="290" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-3" value="Desenho Técnico em Ambiente Computacional" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="400" width="120" height="60" as="geometry" />
