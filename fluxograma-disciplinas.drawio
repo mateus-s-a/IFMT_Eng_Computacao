@@ -271,6 +271,15 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-28" value="Matemática Discreta e Teoria dos Grafos" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="640" y="840" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;fillColor=#647687;strokeColor=#314354;" edge="1" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-29" target="4kvXDWAPBxVA_NMJ1HBV-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="1060" />
+              <mxPoint x="1000" y="1060" />
+              <mxPoint x="1000" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-29" value="Transmissão e Comunicação de Dados" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="950" width="120" height="60" as="geometry" />
         </mxCell>
