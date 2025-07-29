@@ -374,7 +374,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-41" value="Análise e Projeto de Sistemas Computacionais" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="1" vertex="1">
           <mxGeometry x="1040" y="730" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#76608a;strokeColor=#432D57;jumpStyle=arc;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-42" target="4kvXDWAPBxVA_NMJ1HBV-49" edge="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#76608a;strokeColor=#432D57;jumpStyle=arc;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-42" target="4kvXDWAPBxVA_NMJ1HBV-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-42" value="Inteligência Artificial" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="1" vertex="1">
