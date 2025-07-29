@@ -499,8 +499,13 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-55" value="Disciplina Eletiva" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-20" vertex="1">
           <mxGeometry y="550" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-17" target="4kvXDWAPBxVA_NMJ1HBV-29">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;jumpStyle=arc;" edge="1" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-17" target="4kvXDWAPBxVA_NMJ1HBV-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="550" />
+              <mxPoint x="590" y="980" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
