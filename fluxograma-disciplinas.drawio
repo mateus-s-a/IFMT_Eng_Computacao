@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="1226" dy="1051" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="701" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -453,6 +453,30 @@
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-8" value="Economia" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-4" vertex="1">
           <mxGeometry y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-5" value="1° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-6" value="2° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-7" value="3° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-8" value="4° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-9" value="5° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-10" value="6° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-11" value="7° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1270.5" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-12" value="&lt;div&gt;8° Semestre&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="250" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
