@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="853" dy="731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="630" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -75,7 +75,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#008a00;strokeColor=#005700;jumpStyle=arc;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-14" target="4kvXDWAPBxVA_NMJ1HBV-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;jumpStyle=arc;" edge="1" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-14" target="4kvXDWAPBxVA_NMJ1HBV-28">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;jumpStyle=arc;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-14" target="4kvXDWAPBxVA_NMJ1HBV-28" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="300" y="920" />
@@ -189,7 +189,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;fillColor=#647687;strokeColor=#314354;" edge="1" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-29" target="4kvXDWAPBxVA_NMJ1HBV-43">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;fillColor=#647687;strokeColor=#314354;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-29" target="4kvXDWAPBxVA_NMJ1HBV-43" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="700" y="1070" />
@@ -289,13 +289,13 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-48" target="4kvXDWAPBxVA_NMJ1HBV-54" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-12" value="&lt;div&gt;8° Semestre&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-12" value="&lt;div&gt;8° Semestre&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1470" y="250" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-13" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-13" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="40" y="250" width="120" height="760" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-5" value="1° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XGP6w65IYmNDbE1TMmtb-13">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-5" value="1° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-13" vertex="1">
           <mxGeometry x="30" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-2" value="Fundamentos da Matemática" style="rounded=1;whiteSpace=wrap;html=1;glass=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-13" vertex="1">
@@ -319,7 +319,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-8" value="Economia" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-13" vertex="1">
           <mxGeometry y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-14" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-14" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="240" y="250" width="120" height="760" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-9" value="&lt;div&gt;Cálculo Diferencial e Integral I&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-14" vertex="1">
@@ -343,10 +343,10 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-15" value="Ciência do Ambiente" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-14" vertex="1">
           <mxGeometry y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-6" value="2° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XGP6w65IYmNDbE1TMmtb-14">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-6" value="2° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-14" vertex="1">
           <mxGeometry x="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-15" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-15" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="440" y="250" width="120" height="760" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-16" value="&lt;div&gt;Física Geral e Experimental II&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-15" vertex="1">
@@ -370,13 +370,13 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-22" value="&lt;div&gt;Cálculo Diferencial e Integral II&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-15" vertex="1">
           <mxGeometry y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-7" value="3° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XGP6w65IYmNDbE1TMmtb-15">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-7" value="3° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-15" vertex="1">
           <mxGeometry x="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-16" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-16" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="640" y="250" width="120" height="760" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-23" value="Equações Diferenciais" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-16" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-23" value="Equações Diferenciais" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-16" vertex="1">
           <mxGeometry y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-24" value="&lt;div&gt;Física Geral e Experimental III&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-16" vertex="1">
@@ -397,10 +397,10 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-29" value="Transmissão e Comunicação de Dados" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-16" vertex="1">
           <mxGeometry y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-8" value="4° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XGP6w65IYmNDbE1TMmtb-16">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-8" value="4° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-16" vertex="1">
           <mxGeometry x="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-17" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-17" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="840" y="250" width="120" height="760" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-30" value="Ética Profissional" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
@@ -424,10 +424,10 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-36" value="Compiladores" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-9" value="5° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XGP6w65IYmNDbE1TMmtb-17">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-9" value="5° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry x="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-18" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-18" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1040" y="250" width="120" height="760" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-37" value="Laboratório de Circuitos Elétricos II" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-18" vertex="1">
@@ -451,10 +451,10 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-43" value="Redes de Computadores" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-18" vertex="1">
           <mxGeometry y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-10" value="6° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XGP6w65IYmNDbE1TMmtb-18">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-10" value="6° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-18" vertex="1">
           <mxGeometry x="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-19" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-19" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1240.5" y="250" width="120.5" height="760" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-44" value="Controle de Sistemas Contínuos I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-19" vertex="1">
@@ -478,10 +478,10 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-50" value="Eletrônica Analógica II" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-19" vertex="1">
           <mxGeometry x="0.5" y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-11" value="7° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="XGP6w65IYmNDbE1TMmtb-19">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-11" value="7° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-19" vertex="1">
           <mxGeometry x="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-20" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-20" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1440" y="290" width="120" height="610" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-51" value="Processamento Digital de Sinais" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-20" vertex="1">
@@ -499,7 +499,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-55" value="Disciplina Eletiva" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-20" vertex="1">
           <mxGeometry y="550" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="XGP6w65IYmNDbE1TMmtb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;jumpStyle=arc;" edge="1" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-17" target="4kvXDWAPBxVA_NMJ1HBV-29">
+        <mxCell id="XGP6w65IYmNDbE1TMmtb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;jumpStyle=arc;" parent="1" source="4kvXDWAPBxVA_NMJ1HBV-17" target="4kvXDWAPBxVA_NMJ1HBV-29" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="590" y="550" />
