@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="1425" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1425" dy="812" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -340,7 +340,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-14" value="&lt;div&gt;Algoritmos II&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="XGP6w65IYmNDbE1TMmtb-14" vertex="1">
           <mxGeometry y="590" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-15" value="Ciência do Ambiente" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-14" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-15" value="Ciência do Ambiente" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-14" vertex="1">
           <mxGeometry y="700" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XGP6w65IYmNDbE1TMmtb-6" value="2° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-14" vertex="1">
@@ -403,25 +403,25 @@
         <mxCell id="XGP6w65IYmNDbE1TMmtb-17" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="840" y="250" width="120" height="760" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-30" value="Ética Profissional" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-30" value="Ética Profissional" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-31" value="Circuitos Elétricos I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-31" value="Circuitos Elétricos I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-32" value="Laboratório de Circuitos Elétricos I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-32" value="Laboratório de Circuitos Elétricos I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-33" value="Extensão I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-33" value="Extensão I" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-34" value="Engenharia de Software" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-34" value="Engenharia de Software" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="480" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-35" value="Programação Web" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-35" value="Programação Web" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="590" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-36" value="Compiladores" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-36" value="Compiladores" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
           <mxGeometry y="700" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XGP6w65IYmNDbE1TMmtb-9" value="5° Semestre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="XGP6w65IYmNDbE1TMmtb-17" vertex="1">
