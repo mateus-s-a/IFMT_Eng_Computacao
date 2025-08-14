@@ -1,0 +1,8 @@
+- CMMI
+- MPS-BR *(versão brasileira)*
+- Waterfall Diagram
+- Incremental Model *(SCRUM)*
+- SCRUM Framework
+- Git e Git Project
+- User Story
+- Store Points
