@@ -11,6 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "dotenv": "^17.2.1",
         "lodash": "^4.17.21"
     }
 }
