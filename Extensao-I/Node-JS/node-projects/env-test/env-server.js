@@ -1,8 +1,8 @@
-require('dotenv').config();
+require('dotenv').config();                                                 // Load variables from .env file into 'process.env'
 
 const http = require('http');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;                                      // Read the configuration from 'process.env', with defaults
 const GREETING = process.env.GREETING_MESSAGE || "Hello, welcome.";
 
 const server = http.createServer((req, res) => {
@@ -11,5 +11,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}, following: http://localhost:${PORT}`);
+    console.log(`Server's running on ${PORT}: http://localhost:${PORT}`);
 });
