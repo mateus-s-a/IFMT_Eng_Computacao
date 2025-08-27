@@ -1,12 +1,12 @@
-require('dotenv').config();
+require('dotenv').config();                                 // Load environment variables from '.env' file
 
 const express = require('express');
-const { Pool } = require('pg');
+const { Pool } = require('pg');                             // Import the 'pg'(Postgre) Pool object
 
 const app = express();
 const PORT = 3000;
 
-const pool = new Pool({
+const pool = new Pool({                                 // Create a new Pool instance to manage Database connections
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
     database: process.env.DB_DATABASE,
@@ -18,7 +18,9 @@ app.use(express.json());
 
 
 
-app.get('/todos', async (req, res) => {
+// --- ROUTES (Now with async/await and DB queries) ---
+
+app.get('/todos', async (req, res) => {                     // READ: Get all To-dos
     try {
         const result = await pool.query('SELECT * FROM todos ORDER BY id ASC');
         res.json(result.rows);
@@ -28,9 +30,10 @@ app.get('/todos', async (req, res) => {
     }
 });
 
-app.get('/todos/:id', async (req, res) => {
+app.get('/todos/:id', async (req, res) => {                 // READ: Get a single To-do item by ID
     try {
         const { id } = req.params;
+        // Use a parameterized query to prevent SQL Injection
         const result = await pool.query('SELECT * FROM todos WHERE id = $1', [id]);
 
         if (result.rows.length === 0) {
@@ -43,14 +46,14 @@ app.get('/todos/:id', async (req, res) => {
     }
 });
 
-app.post('/todos', async (req, res) => {
+app.post('/todos', async (req, res) => {                    // CREATE: Add a new To-do
     try {
         const { task } = req.body;
         if (!task) {
             return res.status(400).json({ error: 'Task is required' });
         }
 
-        const result = await pool.query(
+        const result = await pool.query(                    // 'RETURNING *' gets the newly created row back from the DB
             'INSERT INTO todos (task) VALUES ($1) RETURNING *',
             [task]
         );
@@ -61,7 +64,7 @@ app.post('/todos', async (req, res) => {
     }
 });
 
-app.put('/todos/:id', async (req, res) => {
+app.put('/todos/:id', async (req, res) => {                 // UPDATE: Modify an existing To-do item
     try {
         const { id } = req.params;
         const { task, completed } = req.body;
@@ -80,7 +83,7 @@ app.put('/todos/:id', async (req, res) => {
     }
 });
 
-app.delete('/todos/:id', async (req, res) => {
+app.delete('/todos/:id', async (req, res) => {              // DELETE: Remove a To-do item
     try {
         const { id } = req.params;
         const result = await pool.query('DELETE FROM todos WHERE id = $1', [id]);
