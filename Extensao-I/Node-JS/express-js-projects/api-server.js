@@ -36,7 +36,7 @@ app.post('/todos', (req, res) => {                      // CREATE: Add a new to-
     const newTodo = {
         id: Date.now(),                                 // Simple way to generate an unique ID
         task: req.body.task,
-        completed: false
+        completed: req.body.completed !== undefined ? req.body.completed : false
     };
 
     todos.push(newTodo);
