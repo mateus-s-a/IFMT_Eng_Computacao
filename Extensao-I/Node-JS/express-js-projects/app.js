@@ -15,6 +15,9 @@ const logger = (req, res, next) => {                                            
 // --- APPLY THE MIDDLEWARE ---
 app.use(logger);        // It tells Express.js to 'use()' 'logger' for every single request that comes in. MUST be replaced before the routes
 
+// --- SERVE STATIC FILLES (public) ---
+app.use(express.static('public'));                  // This Middleware tells Express.js to look for any requestered files in the 'public' folder
+
 
 // --- ROUTES ---
 app.get('/', (req, res) => {                                                    // 'Homepage' route
@@ -24,7 +27,7 @@ app.get('/', (req, res) => {                                                    
 app.get('/status', (req, res) => {                                              // 'Status' route
     const statusInfo = {
         platform: os.platform(),
-        cpus: os.cpus(),
+        cpus: os.cpus().length,
         freeMemory: `${(os.freemem() / 1024 / 1024).toFixed(2)} MB`,
         uptime: `${(os.uptime() / 60).toFixed(2)} minutes`
     };
