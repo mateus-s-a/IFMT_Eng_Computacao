@@ -2,10 +2,21 @@ const express = require('express');                                             
 const os = require('os');
 
 const app = express();                                                          // 2. Create an Express application instance
-
 const PORT = 3000;                                                              // 3. Define the PORT
 
 
+// --- MIDDLEWARE ---
+const logger = (req, res, next) => {                                                // This is a custom logger middleware
+    console.log(`[${new Date().toISOString}] ${req.method} ${req.originalUrl}`);    // Log the request method and the original URL
+
+    next();                                                                         // Call 'next()' to pass control to the next middleware/route handler
+}
+
+// --- APPLY THE MIDDLEWARE ---
+app.use(logger);        // It tells Express.js to 'use()' 'logger' for every single request that comes in. MUST be replaced before the routes
+
+
+// --- ROUTES ---
 app.get('/', (req, res) => {                                                    // 'Homepage' route
     res.send('<h1>Welcome to our Express.js Server!</h1>');
 });
