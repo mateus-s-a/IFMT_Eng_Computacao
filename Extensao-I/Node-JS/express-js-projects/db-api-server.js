@@ -47,7 +47,7 @@ app.post('/todos', async (req, res) => {
     try {
         const { task } = req.body;
         if (!task) {
-            return res.status(404).json({ error: 'Task is required' });
+            return res.status(400).json({ error: 'Task is required' });
         }
 
         const result = await pool.query(
