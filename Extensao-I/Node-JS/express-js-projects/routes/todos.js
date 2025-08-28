@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {                      // CREATE: Add a new
             return res.status(400).json({ error: 'Task is required' });         // 400 = Bad Request
         }
 
-        const result = pool.query(
+        const result = await pool.query(
             'INSERT INTO todos (task) VALUES ($1) RETURNING *',
             [task]
         );
@@ -53,7 +53,7 @@ router.put('/:id', async (req, res) => {                    // UPDATE: Modify an
     try {
         const { id } = req.params;
         const { task, completed } = req.body;
-        const result = pool.query(
+        const result = await pool.query(
             'UPDATE todos SET task = $1, completed = $2 WHERE id = $3 RETURNING *',
             [task, completed, id]
         );
@@ -71,7 +71,7 @@ router.put('/:id', async (req, res) => {                    // UPDATE: Modify an
 router.delete('/:id', async (req, res) => {                 // DELETE: Remove a todo
     try {
         const { id } = req.params;
-        const result = pool.query('DELETE FROM todos WHERE id = $1', [id]);
+        const result = await pool.query('DELETE FROM todos WHERE id = $1', [id]);
 
         if (result.rowCount === 0) {
             return res.status(404).json({ error: 'Internal server error' });
