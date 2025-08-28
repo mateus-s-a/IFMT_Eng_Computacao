@@ -1,9 +1,12 @@
 const express = require('express');
-const router = express.Router();
-const pool = require('../db');
+const router = express.Router();                    // 1. Cria uma instância do Router
+const pool = require('../db');                      // 2. Preicsa-se do 'pool' de conexões criado anteriormente
+
+// NOTA: Os caminhos agora são relativos a '/todos'
+// GET '/' é o mesmo que '/todos' no arquivo principal
 
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res) => {                       // READ: Get all todos
     try {
         const result = await pool.query('SELECT * FROM todos ORDER BY id ASC');
         res.json(result.rows);
@@ -13,7 +16,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {                    // READ: Get a single todo by ID
     try {
         const { id } = req.params;
         const result = await pool.query('SELECT * FROM todos WHERE id = $1', [id]);
@@ -28,7 +31,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', async (req, res) => {                      // CREATE: Add a new todo
     try {
         const { task } = req.body;
         if (!task) {
@@ -46,7 +49,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', async (req, res) => {                    // UPDATE: Modify an existing code
     try {
         const { id } = req.params;
         const { task, completed } = req.body;
@@ -65,7 +68,7 @@ router.put('/:id', async (req, res) => {
     }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', async (req, res) => {                 // DELETE: Remove a todo
     try {
         const { id } = req.params;
         const result = pool.query('DELETE FROM todos WHERE id = $1', [id]);
@@ -81,4 +84,4 @@ router.delete('/:id', async (req, res) => {
 
 
 
-module.exports = router;
+module.exports = router;                        // 3. Exportar o 'router' para ser usado em outros arquivos
