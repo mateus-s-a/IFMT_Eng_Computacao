@@ -26,7 +26,7 @@ app.get('/todos', async (req, res) => {                     // READ: Get all To-
         res.json(result.rows);
     } catch (err) {
         console.error(err);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ error: 'Internal server error' });       // 500 = Internal Server Error
     }
 });
 
