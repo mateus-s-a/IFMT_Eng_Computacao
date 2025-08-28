@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();                    // 1. Cria uma instância do Router
-const pool = require('../db');                      // 2. Preicsa-se do 'pool' de conexões criado anteriormente
+const pool = require('../db');                      // 2. Precisa-se do 'pool' de conexões criado anteriormente
 
 // NOTA: Os caminhos agora são relativos a '/todos'
 // GET '/' é o mesmo que '/todos' no arquivo principal
@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {                    // READ: Get a singl
         res.json(result.rows[0]);
     } catch (err) {
         console.error(err);
-        res.status();
+        res.status(500).json({ error: 'Internal server error' });
     }
 });
 
@@ -35,7 +35,7 @@ router.post('/', async (req, res) => {                      // CREATE: Add a new
     try {
         const { task } = req.body;
         if (!task) {
-            return res.status(400).json({ error: 'Task is required' });
+            return res.status(400).json({ error: 'Task is required' });         // 400 = Bad Request
         }
 
         const result = pool.query(
@@ -76,6 +76,7 @@ router.delete('/:id', async (req, res) => {                 // DELETE: Remove a 
         if (result.rowCount === 0) {
             return res.status(404).json({ error: 'Internal server error' });
         }
+        res.status(204).send();             // 204 = No Content
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Internal server error' });

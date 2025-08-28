@@ -50,7 +50,7 @@ app.post('/todos', async (req, res) => {                    // CREATE: Add a new
     try {
         const { task } = req.body;
         if (!task) {
-            return res.status(400).json({ error: 'Task is required' });
+            return res.status(400).json({ error: 'Task is required' });         // 400 = Bad Request
         }
 
         const result = await pool.query(                    // 'RETURNING *' gets the newly created row back from the DB
