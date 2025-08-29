@@ -3,17 +3,25 @@ const router = express.Router();                            // 1. Cria uma inst�
 const pool = require('../db');                              // 2. Precisa-se do 'pool' de conexões criado anteriormente
 const asyncHandler = require('express-async-handler');      // Middleware para lidar com erros em funções assíncronas
 const { createTodoSchema, updateTodoSchema } = require('../validators/todoValidator');              // Importanto 'schemas' de validação para 'task' e 'completed'
+const protect = require('../middlewares/protect');
+
 
 // NOTA: Os caminhos agora são relativos a '/todos'
 // GET '/' é o mesmo que '/todos' no arquivo principal
 
 
-router.get('/', asyncHandler(async (req, res) => {                      // READ: Get all todos
+// NOTA PARA 'protect':
+// É possível proteger TODAS as rotas a '/todos' utilizando seu middleware no topo (antes das rotas)
+/* router.use(protect); */
+
+
+router.get('/', protect, asyncHandler(async (req, res) => {                      // READ: Get all todos
+    console.log('User request:', req.user);
     const result = await pool.query('SELECT * FROM todos ORDER BY id ASC');
     res.json(result.rows);
 }));
 
-router.get('/:id', asyncHandler(async (req, res) => {                   // READ: Get a single todo by ID
+router.get('/:id', protect, asyncHandler(async (req, res) => {                   // READ: Get a single todo by ID
     const { id } = req.params;
     const result = await pool.query('SELECT * FROM todos WHERE id = $1', [id]);
 
@@ -23,7 +31,7 @@ router.get('/:id', asyncHandler(async (req, res) => {                   // READ:
     res.json(result.rows[0]);
 }));
 
-router.post('/', asyncHandler(async (req, res) => {                     // CREATE: Add a new todo item
+router.post('/', protect, asyncHandler(async (req, res) => {                     // CREATE: Add a new todo item
     await createTodoSchema.validateAsync(req.body);                         // Valida o corpo da requisição com o 'schema'
     
     const { task } = req.body;
@@ -38,7 +46,7 @@ router.post('/', asyncHandler(async (req, res) => {                     // CREAT
     res.status(201).json(result.rows[0]);
 }));
 
-router.put('/:id', asyncHandler(async (req, res) => {                    // UPDATE: Modify an existing todo item
+router.put('/:id', protect, asyncHandler(async (req, res) => {                    // UPDATE: Modify an existing todo item
     await updateTodoSchema.validateAsync(req.body);
     
     const { id } = req.params;
@@ -64,7 +72,7 @@ router.put('/:id', asyncHandler(async (req, res) => {                    // UPDA
     res.json(result.rows[0]);
 }));
 
-router.delete('/:id', asyncHandler(async (req, res) => {                 // DELETE: Remove a todo
+router.delete('/:id', protect, asyncHandler(async (req, res) => {                 // DELETE: Remove a todo
     const { id } = req.params;
     const result = await pool.query('DELETE FROM todos WHERE id = $1', [id]);
 

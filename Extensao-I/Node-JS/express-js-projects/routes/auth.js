@@ -39,8 +39,9 @@ router.post('/login', asyncHandler(async (req, res) => {                    // R
         return res.status(401).json({ message: 'Invalid credentials' });
     }
 
-    const token = jwt.sign(                     // Se as senhas combinam, gerar o JWT (o "crachá")
-        { id: user.id },                // Payload: informações que queremos no token
+    // Payload: informações que queremos no token
+    const token = jwt.sign(             // Se as senhas combinam, gerar o JWT (o "crachá")
+        { id: user.id },                
         process.env.JWT_SECRET,         // A chave secreta
         { expiresIn: '1h' },            // Options: token expira em 1 hora
     );

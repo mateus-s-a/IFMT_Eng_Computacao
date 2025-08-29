@@ -1,14 +1,14 @@
+const pool = require('../db');
 const jwt = require('jsonwebtoken');
 const asyncHandler = require('express-async-handler');
-const pool = require('../db');
 
 const protect = asyncHandler(async (req, res, next) => {
     let token;
 
-    if (req.headers.authorization && req.headers.au.startsWith('Bearer')) {
+    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
         try {
-            token = req.headers.authorization.slice(' ')[1];                // 1. Extrair o 'token' do cabeçalho 'Bearer <token>'
-
+            token = req.headers.authorization.split(' ')[1];                // 1. Extrair o 'token' do cabeçalho 'Bearer <token>'
+            
             const decoded = jwt.verify(token, process.env.JWT_SECRET);      // 2. Verificar se o 'token' é válido
 
             // 3. Anexar o usuário à requisição 'req' para uso posterior
@@ -18,7 +18,7 @@ const protect = asyncHandler(async (req, res, next) => {
                 throw new Error('User not found');
             }
             req.user = userResult.rows[0];
-
+            
             next();                 // Passa para o próximo middleware/rota 'next()'
         } catch (error) {
             console.error(error);
@@ -32,3 +32,5 @@ const protect = asyncHandler(async (req, res, next) => {
         throw new Error('Not authorized, token missing');
     }
 });
+
+module.exports = protect;
