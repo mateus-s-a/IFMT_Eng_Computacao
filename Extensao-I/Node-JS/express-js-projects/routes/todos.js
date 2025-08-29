@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();                            // 1. Cria uma instância do Router
 const pool = require('../db');                              // 2. Precisa-se do 'pool' de conexões criado anteriormente
-const asyncHandler = require('express-async-handler');
+const asyncHandler = require('express-async-handler');      // Middleware para lidar com erros em funções assíncronas
 const { createTodoSchema, updateTodoSchema } = require('../validators/todoValidator');              // Importanto 'schemas' de validação para 'task' e 'completed'
 
 // NOTA: Os caminhos agora são relativos a '/todos'
