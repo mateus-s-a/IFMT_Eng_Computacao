@@ -36,7 +36,7 @@ router.post('/login', asyncHandler(async (req, res) => {                    // R
 
     const isMatch = await bcrypt.compare(password, user.password);          // Comparar a senha enviada com a senha criptografada no banco
     if (!isMatch) {
-        return res.status(401).json({ message: 'Invalidi credentials' });
+        return res.status(401).json({ message: 'Invalid credentials' });
     }
 
     const token = jwt.sign(                     // Se as senhas combinam, gerar o JWT (o "crachá")
