@@ -2,17 +2,18 @@ const express = require('express');
 const router = express.Router();                            // 1. Cria uma instância do Router
 const pool = require('../db');                              // 2. Precisa-se do 'pool' de conexões criado anteriormente
 const asyncHandler = require('express-async-handler');
+const { createTodoSchema, updateTodoSchema } = require('../validators/todoValidator');              // Importanto 'schemas' de validação para 'task' e 'completed'
 
 // NOTA: Os caminhos agora são relativos a '/todos'
 // GET '/' é o mesmo que '/todos' no arquivo principal
 
 
-router.get('/', asyncHandler(async (req, res) => {                       // READ: Get all todos
+router.get('/', asyncHandler(async (req, res) => {                      // READ: Get all todos
     const result = await pool.query('SELECT * FROM todos ORDER BY id ASC');
     res.json(result.rows);
 }));
 
-router.get('/:id', asyncHandler(async (req, res) => {                    // READ: Get a single todo by ID
+router.get('/:id', asyncHandler(async (req, res) => {                   // READ: Get a single todo by ID
     const { id } = req.params;
     const result = await pool.query('SELECT * FROM todos WHERE id = $1', [id]);
 
@@ -22,11 +23,13 @@ router.get('/:id', asyncHandler(async (req, res) => {                    // READ
     res.json(result.rows[0]);
 }));
 
-router.post('/', asyncHandler(async (req, res) => {                      // CREATE: Add a new todo item
+router.post('/', asyncHandler(async (req, res) => {                     // CREATE: Add a new todo item
+    await createTodoSchema.validateAsync(req.body);                         // Valida o corpo da requisição com o 'schema'
+    
     const { task } = req.body;
-    if (!task) {
+    /* if (!task) {
         return res.status(400).json({ error: 'Task is required' });         // 400 = Bad Request
-    }
+    } */
 
     const result = await pool.query(
         'INSERT INTO todos (task) VALUES ($1) RETURNING *',
@@ -35,17 +38,29 @@ router.post('/', asyncHandler(async (req, res) => {                      // CREA
     res.status(201).json(result.rows[0]);
 }));
 
-router.put('/:id', asyncHandler(async (req, res) => {                    // UPDATE: Modify an existing code
+router.put('/:id', asyncHandler(async (req, res) => {                    // UPDATE: Modify an existing todo item
+    await updateTodoSchema.validateAsync(req.body);
+    
     const { id } = req.params;
     const { task, completed } = req.body;
+    const currentTodoResult = await pool.query('SELECT * FROM todos WHERE id = $1', [id]);
+
+    if (currentTodoResult.rows.length === 0) {
+        return res.status(404).json({ error: 'To-do not found' });
+    }
+    
+    const currentTodo = currentTodoResult.rows[0];
+    const newTask = task || currentTodo.task;
+    const newCompleted = completed !== undefined ? completed : currentTodo.completed;
+
     const result = await pool.query(
         'UPDATE todos SET task = $1, completed = $2 WHERE id = $3 RETURNING *',
-        [task, completed, id]
+        [newTask, newCompleted, id]
     );
 
-    if (result.rows.length === 0) {
+    /*if (result.rows.length === 0) {
         res.status(404).json({ error: 'To-do not found' });
-    }
+    }*/
     res.json(result.rows[0]);
 }));
 
