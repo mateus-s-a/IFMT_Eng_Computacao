@@ -1,6 +1,7 @@
 const express = require('express');
 const todoRoutes = require('./routes/todos');                   // Importanto o módulo de rotas de to-dos
 const usersRoutes = require('./routes/users');
+const errorHandler = require('./middlewares/errorHandler');
 
 const app = express();
 const PORT = 3000;
@@ -13,6 +14,9 @@ app.use(express.json());                        // Middleware para parse de JSON
 // gerenciada pelo nosso 'todoRoutes'
 app.use('/todos', todoRoutes);
 app.use('/users', usersRoutes);
+
+// --- MIDDLEWARE TRATAMENTO DE ERRO ---
+app.use(errorHandler);                          // Deve estar adicionado abaixo das MONTAGEM DAS ROTAS
 
 app.listen(PORT, () => {
     console.log(`Server's running on http://localhost:${PORT}`);
