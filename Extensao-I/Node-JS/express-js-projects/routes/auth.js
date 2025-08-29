@@ -4,14 +4,15 @@ const pool = require('../db');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const asyncHandler = require('express-async-handler');
+const { registerSchema, loginSchema } = require('');
 
 
 router.post('/register', asyncHandler(async (req, res) => {                 // ROTA DE REGISTRO
     const { name, email, password } = req.body;
 
-    if (!name || !email || !password) {                         // Validação simples (em um app real, Joi aqui)
+    /*if (!name || !email || !password) {                         // Validação simples (em um app real, Joi aqui)
         return res.status(400).json({ message: 'Please, fill in all fields' });
-    }
+    }*/
 
     const salt = await bcrypt.genSalt(10);                      // Criptografar a senha
     const hashedPassword = await bcrypt.hash(password, salt);
