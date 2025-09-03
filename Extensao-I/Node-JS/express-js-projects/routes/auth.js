@@ -4,10 +4,12 @@ const pool = require('../db');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const asyncHandler = require('express-async-handler');
-const { registerSchema, loginSchema } = require('');
+const { registerSchema, loginSchema } = require('../validators/authValidator');
 
 
 router.post('/register', asyncHandler(async (req, res) => {                 // ROTA DE REGISTRO
+    await registerSchema.validateAsync(req.body);
+    
     const { name, email, password } = req.body;
 
     /*if (!name || !email || !password) {                         // Validação simples (em um app real, Joi aqui)
@@ -26,6 +28,8 @@ router.post('/register', asyncHandler(async (req, res) => {                 // R
 }));
 
 router.post('/login', asyncHandler(async (req, res) => {                    // ROTA DE LOGIN
+    await loginSchema.validateAsync(req.body);
+    
     const { email, password } = req.body;
 
     const userResult = await pool.query('SELECT * FROM users WHERE email = $1', [email]);       // Encontrar o usuário pelo email
@@ -42,7 +46,7 @@ router.post('/login', asyncHandler(async (req, res) => {                    // R
 
     // Payload: informações que queremos no token
     const token = jwt.sign(             // Se as senhas combinam, gerar o JWT (o "crachá")
-        { id: user.id },                
+        { id: user.id },
         process.env.JWT_SECRET,         // A chave secreta
         { expiresIn: '1h' },            // Options: token expira em 1 hora
     );
