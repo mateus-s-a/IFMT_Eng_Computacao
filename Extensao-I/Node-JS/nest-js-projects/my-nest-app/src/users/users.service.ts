@@ -2,7 +2,13 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class UsersService {
+  private readonly users: string[] = ['Spacery', 'Foyer', 'Triz'];
+  
   getUsers(): string[] {
-    return ['Spacery', 'Foyer', 'Triz']
+    return this.users
+  }
+
+  getUsersById(id: number): string {
+    return this.users[id]
   }
 }
