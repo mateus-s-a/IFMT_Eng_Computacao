@@ -29,10 +29,10 @@ npm run start:dev
 
 
 
-### Considerations.:
+## 3. Concepts
 
-- **Controllers**: these handle incoming requests and return responses.
+- **Modules (`@Module`)**: act as organizers. They group controllers and providers into coherent blocks of functionality. `app.module.ts`
 
-- **Services**: these contain the business logic of your application.
+- **Controllers (`@Controller`)**: handle incoming HTTP requests . They delegate the complex logic to services. `app.controller.ts`
 
-- **Modules**: these help you organize your code into reusable pieces.
+- **Services (`@Injectable`)**: handle the business logic and are listed in a module's `providers` array so they can be injected into controllers. `app.service.ts`
