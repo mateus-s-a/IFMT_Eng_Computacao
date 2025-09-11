@@ -1,16 +1,14 @@
+{% extends "base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quitanda Online</title>
-</head>
-<body>
-    <h1>Bem-vindo à nossa loja!</h1>
-    <p>Esta página foi renderizada a partir de um template.</p>
+{% block content %}
 
-    <img src="{% static 'images/banners/1.jpg' %}" alt="Banner da loja">
-</body>
-</html>
+<section class="section-intro padding-y-sm">
+    <div class="container">
+        <div class="intro-banner-wrap">
+            <img src="{% static 'images/banners/1.jpg' %}" class="img-fluid-rounded">
+        </div>
+    </div>
+</section>
+
+{% endblock %}
