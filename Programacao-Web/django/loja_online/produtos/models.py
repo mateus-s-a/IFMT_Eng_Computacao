@@ -7,7 +7,7 @@ class Produto(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     descricao = models.TextField(max_length=500, blank=True)
     preco = models.DecimalField(max_digits=10, decimal_places=2)
-    imagens = models.ImageField(upload_to='photos/produtos')
+    imagens = models.ImageField(upload_to='photos/produtos/')
     estoque = models.IntegerField()
     esta_disponivel = models.BooleanField(default=True)
     
