@@ -7,6 +7,8 @@ print
     ;
 ```
 
+<br>
+
 **Maneira Formal**: ao criar um token explícito no `Lexer` (como `READ : 'read' ;`), se diz da forma mais organizada e formal; prática recomendada, especialmente em gramáticas maiores, por duas razões principais:
 
 - **Clareza**: fica claro para leitura do código e quais são todas as "palavras-chave" da linguagem;

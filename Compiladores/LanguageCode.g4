@@ -8,6 +8,7 @@ program
 statement
     : assignment
     | print
+    | readCommand
     ;
     
 assignment
@@ -17,6 +18,11 @@ assignment
 print
     : 'print' (STRING | ID) ';'         // 'print' é um token implícito
     ;
+
+readCommand
+    : READ ID ';'
+    ;
+
 
 // Expression Rules
 expr
@@ -36,6 +42,7 @@ factor
 
 
 // Lexer Rules
+READ    : 'read' ;
 ADD     : '+' ;
 SUB     : '-' ;
 MUL     : '*' ;
