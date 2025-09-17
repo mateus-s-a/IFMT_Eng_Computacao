@@ -11,17 +11,23 @@ statement
     | readCommand
     | ifStatement
     | whileStatement
+    | doWhileStatement
     ;
     
+// Loops Rules
+whileStatement
+    : WHILE '(' condition ')' '{' statement+ '}'
+    ;
+
+doWhileStatement
+    : DO '{' statement+ '}'
+    WHILE '(' condition ')' ';'
+    ;
+
 // Condition If-Else Rule
 ifStatement
     : IF '(' condition ')' '{' statement+ '}'
     (ELSE '{' statement+ '}')?      // 'else' é opcional definido com '?'
-    ;
-
-// Loops Rules
-whileStatement
-    : WHILE '(' condition ')' '{' statement+ '}'
     ;
 
 condition
@@ -63,6 +69,7 @@ factor
 
 
 // Lexer (cada um é um Token)
+DO      : 'do' ;
 WHILE   : 'while' ;
 IF      : 'if' ;
 ELSE    : 'else' ;
