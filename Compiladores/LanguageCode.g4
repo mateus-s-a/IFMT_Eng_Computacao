@@ -10,12 +10,18 @@ statement
     | print
     | readCommand
     | ifStatement
+    | whileStatement
     ;
     
 // Condition If-Else Rule
 ifStatement
     : IF '(' condition ')' '{' statement+ '}'
-    (ELSE '{' statement+ '}')?
+    (ELSE '{' statement+ '}')?      // 'else' é opcional definido com '?'
+    ;
+
+// Loops Rules
+whileStatement
+    : WHILE '(' condition ')' '{' statement+ '}'
     ;
 
 condition
@@ -57,6 +63,7 @@ factor
 
 
 // Lexer (cada um é um Token)
+WHILE   : 'while' ;
 IF      : 'if' ;
 ELSE    : 'else' ;
 READ    : 'read' ;
