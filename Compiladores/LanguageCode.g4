@@ -9,12 +9,26 @@ statement
     : assignment
     | print
     | readCommand
+    | ifStatement
     ;
     
+// Condition If-Else Rule
+ifStatement
+    : IF '(' condition ')' '{' statement+ '}'
+    (ELSE '{' statement+ '}')?
+    ;
+
+condition
+    : expr (GT | LT | EQ) expr
+    ;
+
+
 assignment
     : ID '=' (STRING | expr) ';'
     ;
 
+
+// Others Rules
 print
     : 'print' (STRING | ID) ';'         // 'print' é um token implícito
     ;
@@ -42,14 +56,29 @@ factor
 
 
 
-// Lexer Rules
+// Lexer (cada um é um Token)
+IF      : 'if' ;
+ELSE    : 'else' ;
 READ    : 'read' ;
+
+GT      : '>' ;
+LT      : '<' ;
+EQ      : '==' ;
+
 ADD     : '+' ;
 SUB     : '-' ;
 MUL     : '*' ;
 DIV     : '/' ;
-FLOAT   : [0-9]+'.'[0-9]+ ;
+
+LPAREN  : '(';
+RPAREN  : ')';
+LBRACE  : '{';
+RBRACE  : '}';
+SEMI    : ';';
+
 INT     : [0-9]+ ;
-ID      : [a-zA-Z][a-zA-Z_0-9]* ;
+FLOAT   : [0-9]+ '.' [0-9]+ ;
 STRING  : '"' ~["]* '"' ;
+
+ID      : [a-zA-Z][a-zA-Z_0-9]* ;
 WS      : [ \t\r\n]+ -> skip ;

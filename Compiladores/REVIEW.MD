@@ -16,3 +16,20 @@ print
 ```antlr
 READ : 'read' ;
 ```
+
+<br><br>
+
+### Opcional em ANTLR
+Por exemplo, na condição `if-else`, `else` é considerado opcional, dizendo que a gramática deve aceitar um bloco `else` se ele estiver lá, mas não retornar um erro se não estiver.
+
+Em ANTLR, o símbolo de interrogação `?` marca algo como "opcional" (zero ou uma vez):
+```antlr
+condition
+    : expr (GT | LT | EQ) expr
+    ;
+
+ifStatement
+    : IF '(' condition ')' '{' statement+ '}'
+    (ELSE '{' statement+ '}')?
+    ;
+```
