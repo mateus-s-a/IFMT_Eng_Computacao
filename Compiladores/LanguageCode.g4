@@ -15,7 +15,7 @@ assignment
     ;
 
 print
-    : 'print' (STRING | ID) ';'
+    : 'print' (STRING | ID) ';'         // 'print' é um token implícito
     ;
 
 // Expression Rules
