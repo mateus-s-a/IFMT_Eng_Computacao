@@ -16,7 +16,7 @@ statement
     ;
     
 
-// --- Loops Rules ---
+// *** LOOPS RULES ***
 forStatement
     : FOR '(' forAssignment ';' condition ';' forAssignment ')'
     '{' statement+ '}'
@@ -32,7 +32,7 @@ doWhileStatement
     ;
 
 
-// --- Condition If-Else Rule ---
+// *** CONDITION IF-ELSE RULE ***
 ifStatement
     : IF '(' condition ')' '{' statement+ '}'
     (ELSE '{' statement+ '}')?      // 'else' é opcional definido com '?'
@@ -43,7 +43,7 @@ condition
     ;
 
 
-// --- ASSIGNMENTS
+// *** ASSIGNMENTS ***
 forAssignment
     : ID '=' (STRING | expr)
     ;
@@ -53,7 +53,7 @@ assignment
     ;
 
 
-// --- Others Rules ---
+// *** OTHERS RULES ***
 print
     : 'print' (STRING | ID) ';'         // 'print' é um token implícito
     ;
@@ -63,7 +63,7 @@ readCommand
     ;
 
 
-// --- Expression Rules ---
+// *** EXPRESSION RULES ***
 expr
     : term ( (ADD | SUB) term )*
     ;
@@ -81,7 +81,7 @@ factor
 
 
 
-// --- Lexer (cada um é um Token) ---
+// *** LEXER (cada um é um Token) ***
 FOR     : 'for' ;
 DO      : 'do' ;
 WHILE   : 'while' ;
