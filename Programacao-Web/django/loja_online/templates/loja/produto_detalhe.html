@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="section-content padding-y bg">
+    <div class="container">
+
+        <!-- ============================ COMPONENT 1 ================================= -->
+        <div class="card">
+            <div class="row no-gutters">
+                <aside class="col-md-6">
+                    <article class="gallery-wrap"> 
+                        <div class="img-big-wrap">
+                           <a href="#"><img src="{{ produto.imagens.url }}" alt="{{ produto.produto_nome }}" class="img-fluid"></a>
+                        </div> <!-- img-big-wrap.// -->
+                        
+                    </article> <!-- gallery-wrap .end// -->
+                </aside>
+                <main class="col-md-6">
+                    <article class="content-body">
+                        
+                        <h2 class="title">{{ produto.produto_nome }}</h2>
+                        
+                        <div class="mb-3"> 
+                            <var class="price h4">R$ {{ produto.preco }}</var> 
+                        </div> 
+                        
+                        <p>{{ produto.descricao }}</p>
+                        
+                        
+                        <hr>
+                        {% if produto.estoque <= 0 %}
+                            <h5 class="text-danger">Produto fora de estoque</h5>
+                        {% else %}
+                            <div class="row">
+                                <div class="item-option-select">
+                                    <h6>Quantidade</h6>
+                                    <select class="form-control" name="quantity" id="quantity">
+                                        {% for i in produto.estoque|range %}
+                                            <option value="{{ i|add:1 }}">{{ i|add:1 }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div> <!-- row.// -->
+                            <hr>
+                            <a href="#" class="btn btn-primary"> <span class="text">Adicionar ao Carrinho</span> <i class="fas fa-shopping-cart"></i>  </a>
+                        {% endif %}
+                        
+                    </article> <!-- product-info-aside .// -->
+                </main> <!-- col.// -->
+            </div> <!-- row.// -->
+        </div> <!-- card.// -->
+        <!-- ============================ COMPONENT 1 END .// ================================= -->
+        
+        <br>
+        
+        <div class="row">
+            <div class="col-md-9">
+                
+                <header class="section-heading">
+                    <h3>Avaliações dos Clientes </h3>  
+                    
+                </header>
+                
+                <article class="box mb-3">
+                    <div class="icontext w-100">
+                        <img src="{% static 'images/avatars/avatar1.jpg' %}" class="img-xs icon rounded-circle">
+                        <div class="text">
+                            <span class="date text-muted float-md-right">24.04.2020 </span>  
+                            <h6 class="mb-1">Cliente Satisfeito </h6>
+                            
+                        </div>
+                    </div> <!-- icontext.// -->
+                    <div class="mt-3">
+                        <p>
+                            Produto de excelente qualidade. Recomendo!
+                        </p>	
+                    </div>
+                </article>
+                
+                
+            </div> <!-- col.// -->
+        </div> <!-- row.// -->
+        
+        
+    </div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+{% endblock %}
