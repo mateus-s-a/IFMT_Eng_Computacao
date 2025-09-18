@@ -119,6 +119,7 @@ erDiagram
       date data_inicio
       date data_fim
       int medico_id FK
+      int secretario_id FK
       datetime data_geracao
       string arquivo_caminho
     }
