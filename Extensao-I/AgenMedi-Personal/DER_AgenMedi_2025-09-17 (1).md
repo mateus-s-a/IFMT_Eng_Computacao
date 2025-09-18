@@ -1,18 +1,5 @@
 ```mermaid
 erDiagram
-    HOSPITAL ||--o{ USUARIO : "possui"
-    HOSPITAL ||--o{ PACIENTE : "atende"
-    HOSPITAL ||--o{ RELATORIO : "gera"
-    USUARIO ||--|| MEDICO : "perfil"
-    USUARIO ||--|| SECRETARIO : "perfil"
-    ESPECIALIDADE ||--o{ MEDICO : "classifica"
-    MEDICO ||--o{ AGENDA_MEDICO : "tem"
-    PACIENTE ||--o{ CONSULTA : "realiza"
-    MEDICO ||--o{ CONSULTA : "atende"
-    AGENDA_MEDICO ||--|| CONSULTA : "horario"
-    SECRETARIO ||--o{ CONSULTA : "agendou"
-    USUARIO ||--o{ RELATORIO : "gerou"
-
     HOSPITAL {
       int hospital_id PK
       string nome
