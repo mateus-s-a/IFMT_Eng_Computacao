@@ -38,7 +38,7 @@
                 </div>
             </aside>
             <main class="col-md-9">
-
+            
                 <header class="border-bottom mb-4 pb-3">
                     <div class="form-inline">
                         <span class="mr-md-auto"><b>{{ produtos_quant }}</b> Itens encontrados </span>
@@ -50,12 +50,12 @@
                     {% for produto in produtos %}
                     <div class="col-md-4">
                         <figure class="card card-product-grid">
-                            <a href="./product-detail.html" class="img-wrap">
+                            <a href="{{ produto.get_url }}" class="img-wrap">
                                 <img src="{{ produto.imagens.url }}">
                             </a>
                             <figcaption class="info-wrap">
                                 <div class="fix-height">
-                                    <a href="./product-detail.html" class="title">{{ produto.produto_nome }}</a>
+                                    <a href="{{ produto.get_url }}" class="title">{{ produto.produto_nome }}</a>
                                     <div class="price-wrap mt-2">
                                         <span class="price">R$ {{ produto.preco }}</span>
                                     </div>

@@ -1,4 +1,4 @@
-grammar LanguageCode;
+grammar MicroLang;
 
 // *** PARSER ***
 programa

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="section-content padding-y bg">
+    <div class="container">
+
+        <div class="card">
+            <div class="row no-gutters">
+                <aside class="col-md-6">
+                    <article class="gallery-wrap">
+                        <div class="img-big-wrap">
+                            <a href="#"><img src="{{ produto.imagens.url }}"></a>
+                        </div>
+                    </article>
+                </aside>
+                <main class="col-md-6 border-left">
+                    <article class="content-body">
+
+                        <h2 class="title">{{ produto.produto_nome }}</h2>
+
+                        <div class="mb-3">
+                            <var class="price h4">R$ {{ produto.preco }}</var>
+                        </div>
+
+                        <p>{{ produto.descricao }}</p>
+
+                        <hr>
+                        <div class="row">
+                            <div class="item-option-select">
+                                <h6>Estoque</h6>
+                                <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-light active">
+                                        <input type="radio" name="radio_color" checked> {{ produto.estoque }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        {% if produto.estoque <= 0 %}
+                            <h5 class="text-danger">Produto Indisponível</h5>
+                        {% else %}
+                            <a href="#" class="btn btn-primary">
+                                <span class="text">Adicionar ao Carrinho</span>
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        {% endif %}
+
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

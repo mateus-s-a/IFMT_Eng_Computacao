@@ -20,3 +20,14 @@ def visualizarLoja(request, categoria_slug=None):
         'produtos_quant': produtos_quant,
     }
     return render(request, 'loja/loja.html', context)
+
+def produto_detalhe(request, categoria_slug, produto_slug):
+    try:
+        produto_unico = Produto.objects.get(categoria__slug=categoria_slug, slug=produto_slug)
+    except Exception as e:
+        raise e
+    
+    context = {
+        'produto': produto_unico,
+    }
+    return render(request, 'loja/produto_detalhe.html', context)
