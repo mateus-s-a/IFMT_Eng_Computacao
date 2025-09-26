@@ -3,7 +3,7 @@ import { ScrollView, View, Text, Image, StyleSheet, ActivityIndicator, Dimension
 import { getPopularMovies } from "../api/api.js";
 
 const { width } = Dimensions.get('window');
-const cardWidth = width * 0.4;      // 40% da largura da tela
+const cardWidth = width * 0.4;
 
 export default function MoviesScroll() {
     const [movies, setMovies] = useState([]);
@@ -21,10 +21,8 @@ export default function MoviesScroll() {
     if (loading) {
         return (
             <View style={styles.loadingContainer}>
-                <ActivityIndicator size="large" color="#e50914">
-                    <Text style={styles.loadingText}>Carregando filmes...</Text>
-                </ActivityIndicator>
-
+                <ActivityIndicator size="large" color="#e50914" />
+                <Text style={styles.loadingText}>Carregando filmes...</Text>
             </View>
         );
     }
@@ -42,11 +40,11 @@ export default function MoviesScroll() {
                 {movies.map((movie, index) => (
                     <View key={movie.id || index} style={styles.card}>
                         <View style={styles.imageContainer}>
-                            <Image source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
+                            <Image 
+                                source={{ uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }}
                                 style={styles.poster}
                                 resizeMode="cover"
-                            >
-                            </Image>
+                            />
                             <View style={styles.overlay}>
                                 <Text style={styles.title} numberOfLines={2}>{movie.title}</Text>
                             </View>
@@ -71,83 +69,70 @@ export default function MoviesScroll() {
     );
 }
 
-
-
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#fff",
-        height: 380,             // Altura fixa ao invés de flex: 1
+        paddingVertical: 20,
+    },
+    sectionTitle: {
+        fontSize: 24,
+        fontWeight: "bold",
+        marginHorizontal: 16,
+        marginBottom: 16,
+        color: "#333",
     },
     loadingContainer: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#fff",
+        paddingVertical: 50,
     },
     loadingText: {
-        color: "#333",
         marginTop: 10,
-        fontSize: 16,
+        color: "#666",
+        fontSize: 14,
     },
-    sectionTitle: {
-        fontSize: 22,
-        fontWeight: "bold",
-        color: "#333",
-        marginLeft: 15,
-        marginTop: 10,
-        marginBottom: 15,
-    },
-    scrollView: {
-        flex: 1,
+    ScrollView: {
+        paddingLeft: 16,
     },
     scrollContent: {
-        paddingHorizontal: 15,
-        paddingBottom: 20,
+        paddingRight: 16,
     },
     card: {
         width: cardWidth,
-        backgroundColor: "#1a1a1a",
-        borderRadius: 16,
-        marginRight: 15,
-        overflow: "hidden",
-        elevation: 8,
+        marginRight: 16,
+        backgroundColor: "#fff",
+        borderRadius: 12,
+        elevation: 3,
         shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 4,
-        },
-        shadowOpacity: 0.3,
-        shadowRadius: 8,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
     },
     imageContainer: {
         position: "relative",
-        height: 240,
+        borderTopLeftRadius: 12,
+        borderTopRightRadius: 12,
+        overflow: "hidden",
     },
     poster: {
         width: "100%",
-        height: "100%",
+        height: 200,
     },
     overlay: {
         position: "absolute",
         bottom: 0,
         left: 0,
         right: 0,
-        height: 80,
-        backgroundColor: "rgba(0,0,0,0.8)",
-        justifyContent: "center",
-        padding: 12,
+        backgroundColor: "rgba(0,0,0,0.7)",
+        padding: 8,
+    },
+    title: {
+        color: "#fff",
+        fontSize: 14,
+        fontWeight: "bold",
     },
     cardContent: {
         padding: 12,
-    },
-    title: {
-        fontSize: 16,
-        fontWeight: "bold",
-        color: "#fff",
-        lineHeight: 20,
-        textShadowColor: "rgba(0,0,0,0.8)",
-        textShadowOffset: { width: 0, height: 1 },
-        textShadowRadius: 2,
     },
     ratingContainer: {
         flexDirection: "row",
@@ -157,17 +142,16 @@ const styles = StyleSheet.create({
     },
     rating: {
         fontSize: 12,
-        color: "#ffd700",
         fontWeight: "600",
+        color: "#f39c12",
     },
     year: {
         fontSize: 12,
-        color: "#888",
-        fontWeight: "500",
+        color: "#666",
     },
     overview: {
         fontSize: 12,
-        color: "#ccc",
+        color: "#999",
         lineHeight: 16,
     },
 });

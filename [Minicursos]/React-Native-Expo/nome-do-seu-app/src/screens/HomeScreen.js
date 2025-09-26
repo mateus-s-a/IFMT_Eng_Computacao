@@ -31,54 +31,61 @@ export default function HomeScreen() {
         <View style={styles.container}>
             <Header title="🎬 Catálogo de Filmes" />
 
-            <View style={styles.heroContainer}>
-                {loading ? (
-                    <View style={styles.loadingHero}>
-                        <ActivityIndicator size="large" color="#e50914" />
-                        <Text style={styles.loadingText}>Carregando filme em destaque...</Text>
-                    </View>
-                ) : featuredMovie ? (
-                    <ImageBackground
-                        source={{
-                            uri: `https://image.tmdb.org/t/p/original${featuredMovie.backdrop_path || featuredMovie.poster_path}`
-                        }}
-                        style={styles.hero}
-                        resizeMode="cover"
-                    >
-
-                        <View style={styles.gradientOverlay} />
-
-                        <View style={styles.heroContent}>
-                            <View style={styles.badge}>
-                                <Text style={styles.badgeText}>EM DESTAQUE</Text>
-                            </View>
-
-                            <Text style={styles.heroTitle}>{featuredMovie.title}</Text>
-                            <Text style={styles.heroSubtitle} numberOfLines={2}>
-                                {featuredMovie.overview || "Descubra os melhores filmes do momento"}
-                            </Text>
-
-                            <View style={styles.heroInfo}>
-                                <View style={styles.ratingBadge}>
-                                    <Text style={styles.ratingText}>⭐ {featuredMovie.vote_average?.toFixed(1)}</Text>
-                                </View>
-                                <Text style={styles.yearText}>
-                                    {featuredMovie.release_date ? new Date(featuredMovie.release_date).getFullYear() : ''}
-                                </Text>
-                                <Text style={styles.genreText}>
-                                    {featuredMovie.adult ? '18+' : 'Livre'} • Popular
-                                </Text>
-                            </View>
+            <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
+                <View style={styles.heroContainer}>
+                    {loading ? (
+                        <View style={styles.loadingHero}>
+                            <ActivityIndicator size="large" color="#e50914" />
+                            <Text style={styles.loadingText}>Carregando filme em destaque...</Text>
                         </View>
+                    ) : featuredMovie ? (
+                        <ImageBackground
+                            source={{
+                                uri: `https://image.tmdb.org/t/p/original${featuredMovie.backdrop_path || featuredMovie.poster_path}`
+                            }}
+                            style={styles.hero}
+                            resizeMode="cover"
+                        >
+                            <View style={styles.gradientOverlay} />
 
-                        <View style={styles.bottomFade} />
-                    </ImageBackground>
-                ) : (
-                    <View style={styles.errorHero}>
-                        <Text style={styles.errorText}>Erro ao carregar filme em destaque</Text>
-                    </View>
-                )}
-            </View>
+                            <View style={styles.heroContent}>
+                                <View style={styles.badge}>
+                                    <Text style={styles.badgeText}>EM DESTAQUE</Text>
+                                </View>
+
+                                <Text style={styles.heroTitle}>{featuredMovie.title}</Text>
+                                <Text style={styles.heroSubtitle} numberOfLines={2}>
+                                    {featuredMovie.overview || "Descubra os melhores filmes do momento"}
+                                </Text>
+
+                                <View style={styles.heroInfo}>
+                                    <View style={styles.ratingBadge}>
+                                        <Text style={styles.ratingText}>⭐ {featuredMovie.vote_average?.toFixed(1)}</Text>
+                                    </View>
+                                    <Text style={styles.yearText}>
+                                        {featuredMovie.release_date ? new Date(featuredMovie.release_date).getFullYear() : ''}
+                                    </Text>
+                                    <Text style={styles.genreText}>
+                                        {featuredMovie.adult ? '18+' : 'Livre'} • Popular
+                                    </Text>
+                                </View>
+                            </View>
+
+                            <View style={styles.bottomFade} />
+                        </ImageBackground>
+                    ) : (
+                        <View style={styles.errorHero}>
+                            <Text style={styles.errorText}>Erro ao carregar filme em destaque</Text>
+                        </View>
+                    )}
+                </View>
+
+                <MoviesScroll />
+                
+                <View style={styles.footerSpacing} />
+            </ScrollView>
+
+            <Footer />
         </View>
     );
 }
@@ -90,6 +97,7 @@ const styles = StyleSheet.create({
     },
     scrollContainer: {
         flex: 1,
+        marginBottom: 80,
     },
     heroContainer: {
         width: "100%",
@@ -137,7 +145,6 @@ const styles = StyleSheet.create({
         right: 0,
         bottom: 0,
         backgroundColor: "rgba(0,0,0,0.4)",
-        background: "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%)",
     },
     heroContent: {
         position: "absolute",
@@ -217,6 +224,8 @@ const styles = StyleSheet.create({
         right: 0,
         height: 40,
         backgroundColor: "transparent",
-        background: "linear-gradient(to bottom, rgba(10,10,10,0) 0%, rgba(10,10,10,0.8) 100%)",
+    },
+    footerSpacing: {
+        height: 20,
     },
 });

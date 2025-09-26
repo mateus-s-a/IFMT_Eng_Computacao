@@ -22,6 +22,7 @@ export default function Footer() {
     );
 }
 
+
 const styles = StyleSheet.create({
     footer: {
         backgroundColor: "#f5f5f5",
