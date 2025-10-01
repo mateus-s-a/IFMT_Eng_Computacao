@@ -1,0 +1,2 @@
+grammar BASIQuinho ;
+inicio : .*? EOF ;
