@@ -19,3 +19,6 @@ class CarItem(models.Model):
     def __str__(self):
         # Corrigindo aqui para retornar o nome, que é uma string
         return self.produto.produto_nome
+    
+    def sub_total(self):
+        return self.produto.preco * self.quantidade

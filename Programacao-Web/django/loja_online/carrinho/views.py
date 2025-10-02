@@ -38,6 +38,19 @@ def adicionar_carrinho(request, produto_id):
     
     return redirect('carrinho')
 
+def diminuir_car(request, produto_id):
+    """Diminui a quantidade de um produto no carrinho"""
+    carrinho = Carrinho.objects.get(car_id=_get_cart_id(request))
+    produto = get_object_or_404(Produto, id=produto_id)
+    car_item = CarItem.objects.get(produto=produto, carrinho=carrinho)
+
+    if car_item.quantidade > 1:
+        car_item.quantidade -= 1
+        car_item.save()
+    else:
+        car_item.delete()
+    return redirect('carrinho')
+
 def visualizarCarrinho(request, total=0, quantidade=0, car_items=None):
     try:
         carrinho = Carrinho.objects.get(car_id=_get_cart_id(request))

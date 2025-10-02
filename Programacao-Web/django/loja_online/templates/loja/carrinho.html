@@ -17,7 +17,8 @@
                                 <th scope="col">Produto</th>
                                 <th scope="col" width="120">Quantidade</th>
                                 <th scope="col" width="120">Preço</th>
-                                <th scope="col" class="text-right" width="200"> </th>
+                                <th scope="col" width="120">Subtotal</th>
+                                <th scope="col" class="text-right" width="200"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,15 +39,15 @@
                                     <div class="col">
                                         <div class="input-group input-spinner">
                                             <div class="input-group-prepend">
-                                                <button class="btn btn-light" type="button" id="button-plus">
+                                                <a href="{% url 'diminuir_car' car_item.produto.id %}" class="btn btn-light" type="button" id="button-plus">
                                                     <i class="fa fa-minus"></i>
-                                                </button>
+                                                </a>
                                             </div>
                                             <input type="text" class="form-control" value="{{ car_item.quantidade }}">
                                             <div class="input-group-append">
-                                                <button class="btn btn-light" type="button" id="button-minus">
+                                                <a href="{% url 'adicionar_carrinho' car_item.produto.id %}" class="btn btn-light" type="button" id="button-minus">
                                                     <i class="fa fa-plus"></i>
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -58,7 +59,12 @@
                                     </div>
                                 </td>
                                 <td class="text-right">
-                                    <a href="" class="btn btn-danger"> Remover</a>
+                                    <div class="price-wrap">
+                                        <var class="price">R$ {{ car_item.sub_total }}</var>
+                                    </div>
+                                </td>
+                                <td class="text-right">
+                                    <a href="" class="btn btn-danger">Remover</a>
                                 </td>
                             </tr>
                             {% endfor %}
