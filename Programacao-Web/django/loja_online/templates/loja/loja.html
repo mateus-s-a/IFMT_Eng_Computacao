@@ -50,17 +50,17 @@
                     {% for produto in produtos %}
                     <div class="col-md-4">
                         <figure class="card card-product-grid">
-                            <a href="{% url 'detalhe_produto' produto.categoria.slug produto.slug %}" class="img-wrap">
+                            <a href="{% url 'produto_detalhe' produto.categoria.slug produto.slug %}" class="img-wrap">
                                 <img src="{{ produto.imagens.url }}" alt="{{ produto.produto_nome }}">
                             </a>
                             <figcaption class="info-wrap">
                                 <div class="fix-height">
-                                    <a href="{% url 'detalhe_produto' produto.categoria.slug produto.slug %}" class="title">{{ produto.produto_nome }}</a>
+                                    <a href="{% url 'produto_detalhe' produto.categoria.slug produto.slug %}" class="title">{{ produto.produto_nome }}</a>
                                     <div class="price-wrap mt-2">
                                         <span class="price">R$ {{ produto.preco }}</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-block btn-primary">Adicionar ao Carrinho </a>
+                                <a href="{% url 'adicionar_carrinho' produto.id %}" class="btn btn-block btn-primary">Adicionar ao Carrinho</a>
                             </figcaption>
                         </figure>
                     </div>

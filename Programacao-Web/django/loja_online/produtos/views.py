@@ -22,16 +22,16 @@ def visualizarLoja(request, categoria_slug=None):
     return render(request, 'loja/loja.html', context)
 
 
-def detalheProduto(request, categoria_slug, produto_slug):
+def produto_detalhe(request, categoria_slug, produto_slug):
     """
     View para exibir detalhes de um produto específico
     """
     try:
-        produto = Produto.objects.get(categoria__slug=categoria_slug, slug=produto_slug)
+        produto_unico = Produto.objects.get(categoria__slug=categoria_slug, slug=produto_slug)
     except Exception as e:
         raise e
     
     context = {
-        'produto': produto,
+        'produto': produto_unico,
     }
     return render(request, 'loja/produto_detalhe.html', context)
