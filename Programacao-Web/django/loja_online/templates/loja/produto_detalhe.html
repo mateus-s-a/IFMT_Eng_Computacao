@@ -33,10 +33,21 @@
                         {% if produto.estoque <= 0 %}
                             <h5 class="text-danger">Produto Indisponível</h5>
                         {% else %}
-                            <a href="{% url 'adicionar_carrinho' produto.id %}" class="btn btn-primary">
-                                <span class="text">Adicionar ao Carrinho</span>
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
+                            {% if no_carrinho %}
+                                <a href="{% url 'carrinho' %}" class="btn btn-success">
+                                    <span class="text">Ver Carrinho</span>
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="{% url 'adicionar_carrinho' produto.id %}" class="btn btn-outline-primary">
+                                    <span class="text">Adicionar Mais</span>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            {% else %}
+                                <a href="{% url 'adicionar_carrinho' produto.id %}" class="btn btn-primary">
+                                    <span class="text">Adicionar ao Carrinho</span>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            {% endif %}
                         {% endif %}
                     </article> <!-- product-info-aside .// -->
                 </main> <!-- col.// -->

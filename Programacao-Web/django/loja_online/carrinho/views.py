@@ -49,6 +49,16 @@ def diminuir_car(request, produto_id):
         car_item.save()
     else:
         car_item.delete()
+
+    return redirect('carrinho')
+
+def remover_car_item(request, produto_id):
+    """Remove um item por completo do carrinho."""
+    carrinho = Carrinho.objects.get(car_id=_get_cart_id(request))
+    produto = get_object_or_404(Produto, id=produto_id)
+    car_item = CarItem.objects.get(produto=produto, carrinho=carrinho)
+    car_item.delete()
+
     return redirect('carrinho')
 
 def visualizarCarrinho(request, total=0, quantidade=0, car_items=None):

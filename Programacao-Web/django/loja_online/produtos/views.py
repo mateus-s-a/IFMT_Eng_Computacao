@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Produto
 from categoria.models import Categoria
+from carrinho.models import CarItem
+from carrinho.views import _get_cart_id
 
 # Create your views here.
 def visualizarLoja(request, categoria_slug=None):
@@ -28,10 +30,14 @@ def produto_detalhe(request, categoria_slug, produto_slug):
     """
     try:
         produto_unico = Produto.objects.get(categoria__slug=categoria_slug, slug=produto_slug)
+        # Verifica se o produto já está no carrinho
+        no_carrinho = CarItem.objects.filter(carrinho__car_id=_get_cart_id(request), produto=produto_unico).exists()
     except Exception as e:
         raise e
     
     context = {
         'produto': produto_unico,
+        'no_carrinho': no_carrinho,     # Envia o boolean ao template pelo 'context'
     }
+
     return render(request, 'loja/produto_detalhe.html', context)

@@ -34,6 +34,7 @@ env/
 venv/
 ENV/
 .venv/
+virtual/
 
 # Environment / secrets
 .env

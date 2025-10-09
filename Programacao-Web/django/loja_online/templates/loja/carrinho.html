@@ -64,7 +64,7 @@
                                     </div>
                                 </td>
                                 <td class="text-right">
-                                    <a href="" class="btn btn-danger">Remover</a>
+                                    <a href="{% url 'remover_car_item' car_item.produto.id %}" class="btn btn-danger">Remover</a>
                                 </td>
                             </tr>
                             {% endfor %}
