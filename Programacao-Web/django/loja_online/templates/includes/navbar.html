@@ -66,9 +66,13 @@
                                 <a href="static/register.html"> Register</a>
                             </div>
                         </div>
-                        <a href="static/cart.html" class="widget-header pl-3 ml-3">
-                            <div class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></div>
-                            <span class="badge badge-pill badge-danger notify">0</span>
+                        <a href="{% url 'carrinho' %}" class="widget-header pl-3 ml-3">
+                            <div class="icon icon-sm rounded-circle border">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            {% if car_count > 0 %}
+                                <span class="badge badge-pill badge-danger notify">{{ car_count }}</span>
+                            {% endif %}
                         </a>
                     </div>
                 </div>
