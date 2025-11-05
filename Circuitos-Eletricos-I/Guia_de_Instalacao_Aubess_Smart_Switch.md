@@ -1,6 +1,6 @@
 ## **Materiais e Requisitos Técnicos**
 
-![alt text](../.attachments/image.png)
+![alt text](.attachments/image.png)
 
 ### 1. Materiais e Componentes:
 - **Aubess DIY SMART SWITCH (ou similar Tuya):** O dispositivo principal, que é um módulo relé inteligente para automação.
@@ -50,4 +50,5 @@ Siga estas instruções com atenção para montar o circuito de acordo com a ima
 - Siga as instruções do manual do seu Aubess DIY SMART SWITCH para emparelhá-lo com o aplicativo (geralmente Tuya Smart ou Smart Life).
 
 - Uma vez configurado, você poderá controlar a lâmpada através do aplicativo ou por comandos de voz, se houver integração com assistentes como Alexa ou Google Home.
+
 
