@@ -19,7 +19,7 @@
 - **Corrente Máxima:** Verifique a amperagem máxima suportada pelo modelo do seu switch (geralmente 10A ou 16A). A bitola dos cabos deve ser dimensionada para essa corrente.
 - **Conexão Wi-Fi:** O dispositivo requer uma rede Wi-Fi de **2,4 GHz** para funcionar. Ele não se conectará a redes 5 GHz.
 - **Aplicação:** O dispositivo é projetado para atuar como um interruptor para cargas de iluminação. Não é um dimmer, portanto, não serve para ajustar a intensidade da luz.
-**Necessidade de Fio Neutro:** A maioria dos smart switches, incluindo os baseados na plataforma Tuya, precisa de um fio neutro para alimentar sua eletrônica interna e se manter conectado à rede Wi-Fi.
+- **Necessidade de Fio Neutro:** A maioria dos smart switches, incluindo os baseados na plataforma Tuya, precisa de um fio neutro para alimentar sua eletrônica interna e se manter conectado à rede Wi-Fi.
 
 ---
 
@@ -50,5 +50,6 @@ Siga estas instruções com atenção para montar o circuito de acordo com a ima
 - Siga as instruções do manual do seu Aubess DIY SMART SWITCH para emparelhá-lo com o aplicativo (geralmente Tuya Smart ou Smart Life).
 
 - Uma vez configurado, você poderá controlar a lâmpada através do aplicativo ou por comandos de voz, se houver integração com assistentes como Alexa ou Google Home.
+
 
 
