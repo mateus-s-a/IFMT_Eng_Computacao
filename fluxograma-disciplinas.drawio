@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.4">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="1906" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2034" dy="1159" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -439,7 +439,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-39" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Circuitos Elétricos II" vertex="1">
           <mxGeometry height="60" width="120" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-40" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="Eletrônica Analógica I" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-40" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Eletrônica Analógica I" vertex="1">
           <mxGeometry height="60" width="120" y="370" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-41" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="Análise e Projeto de Sistemas Computacionais" vertex="1">
