@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.8">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="2034" dy="1159" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1906" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -266,8 +266,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1200" y="540" />
-              <mxPoint x="1200" y="480" />
-              <mxPoint x="1300" y="480" />
+              <mxPoint x="1200" y="490" />
+              <mxPoint x="1301" y="490" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -316,7 +316,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-7" parent="XGP6w65IYmNDbE1TMmtb-13" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="Algoritmos I" vertex="1">
           <mxGeometry height="60" width="120" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-8" parent="XGP6w65IYmNDbE1TMmtb-13" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Economia" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-8" parent="XGP6w65IYmNDbE1TMmtb-13" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Economia" vertex="1">
           <mxGeometry height="60" width="120" y="700" as="geometry" />
         </mxCell>
         <mxCell id="XGP6w65IYmNDbE1TMmtb-14" connectable="0" parent="1" style="group" value="" vertex="1">
@@ -382,7 +382,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-24" parent="XGP6w65IYmNDbE1TMmtb-16" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="&lt;div&gt;Física Geral e Experimental III&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-25" parent="XGP6w65IYmNDbE1TMmtb-16" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="Cálculo Numérico" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-25" parent="XGP6w65IYmNDbE1TMmtb-16" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Cálculo Numérico" vertex="1">
           <mxGeometry height="60" width="120" y="260" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-26" parent="XGP6w65IYmNDbE1TMmtb-16" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="Banco de Dados" vertex="1">
@@ -433,7 +433,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-37" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Laboratório de Circuitos Elétricos II" vertex="1">
           <mxGeometry height="60" width="120" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-38" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Sinais e Sistemas Lineares" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-38" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Sinais e Sistemas Lineares" vertex="1">
           <mxGeometry height="60" width="120" y="150" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-39" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Circuitos Elétricos II" vertex="1">
@@ -448,7 +448,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-42" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Inteligência Artificial" vertex="1">
           <mxGeometry height="60" width="120" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-43" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Redes de Computadores" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-43" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Redes de Computadores" vertex="1">
           <mxGeometry height="60" width="120" y="700" as="geometry" />
         </mxCell>
         <mxCell id="XGP6w65IYmNDbE1TMmtb-10" parent="XGP6w65IYmNDbE1TMmtb-18" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="6° Semestre" vertex="1">
