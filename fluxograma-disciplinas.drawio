@@ -439,7 +439,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-39" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Circuitos Elétricos II" vertex="1">
           <mxGeometry height="60" width="120" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-40" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Eletrônica Analógica I" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-40" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="Eletrônica Analógica I&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(Eletrônica I)&lt;/font&gt;" vertex="1">
           <mxGeometry height="60" width="120" y="370" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-41" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="Análise e Projeto de Sistemas Computacionais" vertex="1">
