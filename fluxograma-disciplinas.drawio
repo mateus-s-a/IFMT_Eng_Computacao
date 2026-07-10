@@ -466,7 +466,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-46" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Extensão II" vertex="1">
           <mxGeometry height="60" width="120" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-47" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Segurança do Trabalho" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-47" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="Segurança do Trabalho" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="380" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-48" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Mineração de Dados" vertex="1">
