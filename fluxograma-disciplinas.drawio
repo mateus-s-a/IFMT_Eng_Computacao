@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="1894" dy="1076" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2214" dy="1216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -490,7 +490,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-52" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;" value="Trabalho de Conclusão do Curso" vertex="1">
           <mxGeometry height="60" width="120" y="230" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-53" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Administração" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-53" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Administração" vertex="1">
           <mxGeometry height="60" width="120" y="340" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-54" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Projeto de Sistemas Inteligentes" vertex="1">
