@@ -472,7 +472,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-48" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="Mineração de Dados" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-49" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="Segurança de Sistemas de Computação" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-49" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="Segurança de Sistemas de Computação" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="590" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-50" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Eletrônica Analógica II" vertex="1">
