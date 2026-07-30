@@ -457,25 +457,25 @@
         <mxCell id="XGP6w65IYmNDbE1TMmtb-19" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="760" width="120.5" x="1240.5" y="250" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-44" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" value="Controle de Sistemas Contínuos I" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-44" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Controle de Sistemas Contínuos I" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-45" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Microcontroladores" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-45" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad9d5;strokeColor=#ae4132;" value="Microcontroladores" vertex="1">
           <mxGeometry height="60" width="120" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-46" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="Extensão II" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-46" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Extensão II" vertex="1">
           <mxGeometry height="60" width="120" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-47" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="Segurança do Trabalho" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-47" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad9d5;strokeColor=#ae4132;" value="Segurança do Trabalho" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="380" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-48" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="Mineração de Dados" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-49" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="Segurança de Sistemas de Computação" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-49" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Segurança de Sistemas de Computação" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-50" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Eletrônica Analógica II" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-50" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad9d5;strokeColor=#ae4132;" value="Eletrônica Analógica II" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="700" as="geometry" />
         </mxCell>
         <mxCell id="XGP6w65IYmNDbE1TMmtb-11" parent="XGP6w65IYmNDbE1TMmtb-19" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="7° Semestre" vertex="1">
@@ -490,7 +490,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-52" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;" value="Trabalho de Conclusão do Curso" vertex="1">
           <mxGeometry height="60" width="120" y="230" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-53" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Administração" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-53" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Administração" vertex="1">
           <mxGeometry height="60" width="120" y="340" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-54" parent="XGP6w65IYmNDbE1TMmtb-20" style="rounded=1;whiteSpace=wrap;html=1;glass=1;" value="Projeto de Sistemas Inteligentes" vertex="1">
