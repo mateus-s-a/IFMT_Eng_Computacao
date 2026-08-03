@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="LgLqJlize6_huKx9Pt03">
+    <mxGraphModel dx="975" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-11" edge="1" parent="1" source="MhP4Tf71sU1_D-ohx26d-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="MhP4Tf71sU1_D-ohx26d-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;JOGADOR&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="200" x="150" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-6" parent="MhP4Tf71sU1_D-ohx26d-5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- nome&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- simbologia&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- vez (boolean)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-7" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;JOGO (core)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="201" x="294" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-8" parent="MhP4Tf71sU1_D-ohx26d-7" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Jogadores&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Tabuleiro&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- vencedor (boolean)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="201" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-12" edge="1" parent="1" source="MhP4Tf71sU1_D-ohx26d-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="MhP4Tf71sU1_D-ohx26d-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-9" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;TABULEIRO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="201" x="440" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-10" parent="MhP4Tf71sU1_D-ohx26d-9" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- coordenadas&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="201" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=21;fontStyle=1" value="JOGO DA VELHA" vertex="1">
+          <mxGeometry height="40" width="180.5" x="304.25" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-15" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;JOGADOR&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="200" x="990" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-16" parent="MhP4Tf71sU1_D-ohx26d-15" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- nome (string)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Dado&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- vez (boolean)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-17" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;JOGO (core)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="201" x="1134" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-18" parent="MhP4Tf71sU1_D-ohx26d-17" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Jogadores&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Tabuleiro&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- vencedor (boolean)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- ação&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="201" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-20" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;TABULEIRO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="201" x="1280" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-21" parent="MhP4Tf71sU1_D-ohx26d-20" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- posições (vetor)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="201" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=21;fontStyle=1" value="JOGO DA CORRIDA" vertex="1">
+          <mxGeometry height="40" width="225.75" x="1121.63" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-23" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;DADO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="200" x="1135" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="MhP4Tf71sU1_D-ohx26d-24" parent="MhP4Tf71sU1_D-ohx26d-23" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- valorDado (integer)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="200" y="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
