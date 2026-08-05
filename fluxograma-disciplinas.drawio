@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="1606" dy="1035" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1571" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -442,7 +442,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-40" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="Eletrônica Analógica I&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(Eletrônica I)&lt;/font&gt;" vertex="1">
           <mxGeometry height="60" width="120" y="370" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-41" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" value="Análise e Projeto de Sistemas Computacionais" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-41" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Análise e Projeto de Sistemas Computacionais" vertex="1">
           <mxGeometry height="60" width="120" y="480" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-42" parent="XGP6w65IYmNDbE1TMmtb-18" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="Inteligência Artificial" vertex="1">
@@ -469,7 +469,7 @@
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-47" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad9d5;strokeColor=#ae4132;" value="Segurança do Trabalho" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-48" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="Mineração de Dados" vertex="1">
+        <mxCell id="4kvXDWAPBxVA_NMJ1HBV-48" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Mineração de Dados" vertex="1">
           <mxGeometry height="60" width="120" x="0.5" y="480" as="geometry" />
         </mxCell>
         <mxCell id="4kvXDWAPBxVA_NMJ1HBV-49" parent="XGP6w65IYmNDbE1TMmtb-19" style="rounded=1;whiteSpace=wrap;html=1;glass=1;fillColor=#fad7ac;strokeColor=#b46504;" value="Segurança de Sistemas de Computação" vertex="1">
