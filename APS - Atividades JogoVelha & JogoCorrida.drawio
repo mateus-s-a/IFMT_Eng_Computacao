@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="LgLqJlize6_huKx9Pt03">
-    <mxGraphModel dx="1608" dy="406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5585" dy="2540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -262,14 +262,46 @@
         <mxCell id="2nFan4YyKMBL7wXy4OKG-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Apurar Comissões Semanais&lt;br&gt;(nível 2)" vertex="1">
           <mxGeometry height="80" width="160" x="-60" y="2340" as="geometry" />
         </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-74" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-65" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;dashed=1;" target="2nFan4YyKMBL7wXy4OKG-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-75" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-74" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0128" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-65" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Aprovar Pedido&lt;br&gt;(nível 2)" vertex="1">
           <mxGeometry height="80" width="160" x="-405" y="2420" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-76" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-66" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.041;entryY=0.34;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;fillColor=#e51400;strokeColor=#B20000;" target="2nFan4YyKMBL7wXy4OKG-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-77" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0555" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-66" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Cancelar Pedido&lt;br&gt;(nível 2)" vertex="1">
           <mxGeometry height="80" width="160" x="-405" y="2520" as="geometry" />
         </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-83" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-67" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;dashed=1;" target="2nFan4YyKMBL7wXy4OKG-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-86" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-83" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0272" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Programar Data de Entrega&lt;br&gt;(nível 2)" vertex="1">
           <mxGeometry height="80" width="160" x="-60" y="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-84" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-68" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;dashed=1;" target="2nFan4YyKMBL7wXy4OKG-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-87" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-84" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0758" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-68" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Avaliar Pedido de Venda&lt;br&gt;(nível 1)" vertex="1">
           <mxGeometry height="80" width="150" x="-60" y="2600" as="geometry" />
@@ -281,6 +313,23 @@
           <mxGeometry relative="1" x="-0.0239" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-78" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Análise de Crédito do Cliente&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="290" y="2470" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-85" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-79" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;dashed=1;" target="2nFan4YyKMBL7wXy4OKG-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-88" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-85" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0789" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-79" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Análise Preliminar de Estoque&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="290" y="2600" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-80" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Bloquear Quantidade em Estoque&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="600" y="2600" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
