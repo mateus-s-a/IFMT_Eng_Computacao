@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="LgLqJlize6_huKx9Pt03">
-    <mxGraphModel dx="1752" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1481" dy="339" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -62,13 +62,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(242, 242, 242));&quot;&gt;Promotor de Venda&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="30" x="-580" y="1160" as="geometry" />
+          <mxGeometry height="60" width="30" x="-660" y="1160" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-12" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;fillColor=#1ba1e2;strokeColor=#006EAF;" target="2nFan4YyKMBL7wXy4OKG-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(213, 213, 213));&quot;&gt;Atendente de Vendas&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="30" x="-580" y="1270" as="geometry" />
+          <mxGeometry height="60" width="30" x="-660" y="1270" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-14" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;dashed=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" target="2nFan4YyKMBL7wXy4OKG-13">
           <mxGeometry relative="1" as="geometry" />
@@ -100,7 +100,7 @@
         <mxCell id="2nFan4YyKMBL7wXy4OKG-26" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d80073;strokeColor=#A50040;endArrow=none;endFill=0;edgeStyle=orthogonalEdgeStyle;curved=1;" target="2nFan4YyKMBL7wXy4OKG-25">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-550" y="1540" />
+              <mxPoint x="-630" y="1540" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -117,7 +117,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-23" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(242, 242, 242));&quot;&gt;Gerente de Estoque&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="30" x="-580" y="2060" as="geometry" />
+          <mxGeometry height="60" width="30" x="-660" y="2100" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-45" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;endArrow=none;endFill=0;" target="2nFan4YyKMBL7wXy4OKG-41">
           <mxGeometry relative="1" as="geometry" />
@@ -126,7 +126,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-24" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(242, 242, 242));&quot;&gt;Gerente de Vendas&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="30" x="-580" y="2170" as="geometry" />
+          <mxGeometry height="60" width="30" x="-660" y="2210" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Manter Cadastro de Produtos&lt;br&gt;(nível 1)" vertex="1">
           <mxGeometry height="80" width="150" x="-400" y="1500" as="geometry" />
@@ -167,17 +167,50 @@
         <mxCell id="2nFan4YyKMBL7wXy4OKG-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Baixar Estoque Definitivo&lt;br&gt;(nível 2)" vertex="1">
           <mxGeometry height="80" width="150" x="-60" y="1670" as="geometry" />
         </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-50" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fillColor=#008a00;strokeColor=#005700;" target="2nFan4YyKMBL7wXy4OKG-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-53" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="0.006" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-51" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fillColor=#008a00;strokeColor=#005700;" target="2nFan4YyKMBL7wXy4OKG-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-54" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0018" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-52" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fillColor=#008a00;strokeColor=#005700;" target="2nFan4YyKMBL7wXy4OKG-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-55" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0048" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-38" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Registrar Entrada de Mercadorias&lt;br&gt;(nível 1)" vertex="1">
-          <mxGeometry height="80" width="150" x="-400" y="1870" as="geometry" />
+          <mxGeometry height="80" width="150" x="-400" y="1910" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-40" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Solicitar Compra a Fornecedor&lt;br&gt;(nível 1)" vertex="1">
-          <mxGeometry height="80" width="150" x="-400" y="1990" as="geometry" />
+          <mxGeometry height="80" width="150" x="-400" y="2030" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-41" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Gerar Relatórios Gerenciais&lt;br&gt;(nível 1)" vertex="1">
-          <mxGeometry height="80" width="150" x="-400" y="2100" as="geometry" />
+          <mxGeometry height="80" width="150" x="-400" y="2140" as="geometry" />
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-42" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Gerar Comissões&lt;br&gt;(nível 1)" vertex="1">
-          <mxGeometry height="80" width="150" x="-400" y="2210" as="geometry" />
+          <mxGeometry height="80" width="150" x="-400" y="2250" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Processar Entrada (Liberar Estoque)&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="-60" y="1820" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-48" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Conferir Entrada Física&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="-60" y="1910" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-49" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Digitar Nota Fiscal de Entrada&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="-60" y="2000" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
