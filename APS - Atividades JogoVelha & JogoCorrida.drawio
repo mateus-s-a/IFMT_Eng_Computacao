@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="LgLqJlize6_huKx9Pt03">
-    <mxGraphModel dx="1481" dy="339" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2428" dy="847" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -200,6 +200,30 @@
         <mxCell id="2nFan4YyKMBL7wXy4OKG-41" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Gerar Relatórios Gerenciais&lt;br&gt;(nível 1)" vertex="1">
           <mxGeometry height="80" width="150" x="-400" y="2140" as="geometry" />
         </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-59" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-42" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;dashed=1;" target="2nFan4YyKMBL7wXy4OKG-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-62" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-59" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0444" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-60" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-42" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;dashed=1;" target="2nFan4YyKMBL7wXy4OKG-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-63" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-60" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0785" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-61" edge="1" parent="1" source="2nFan4YyKMBL7wXy4OKG-42" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;dashed=1;" target="2nFan4YyKMBL7wXy4OKG-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-64" connectable="0" parent="2nFan4YyKMBL7wXy4OKG-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.065" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-42" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Gerar Comissões&lt;br&gt;(nível 1)" vertex="1">
           <mxGeometry height="80" width="150" x="-400" y="2250" as="geometry" />
         </mxCell>
@@ -211,6 +235,15 @@
         </mxCell>
         <mxCell id="2nFan4YyKMBL7wXy4OKG-49" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Digitar Nota Fiscal de Entrada&lt;br&gt;(nível 2)" vertex="1">
           <mxGeometry height="80" width="160" x="-60" y="2000" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-56" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Digitar Nota Fiscal de Entrada&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="-60" y="2160" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Digitar Nota Fiscal de Entrada&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="-60" y="2250" as="geometry" />
+        </mxCell>
+        <mxCell id="2nFan4YyKMBL7wXy4OKG-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" value="Digitar Nota Fiscal de Entrada&lt;br&gt;(nível 2)" vertex="1">
+          <mxGeometry height="80" width="160" x="-60" y="2340" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
