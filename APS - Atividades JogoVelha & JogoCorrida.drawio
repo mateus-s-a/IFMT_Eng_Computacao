@@ -810,6 +810,24 @@
         <mxCell id="EZ9PXiC3q6WF-ZMjJYLO-27" parent="EZ9PXiC3q6WF-ZMjJYLO-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- idCategoria: int&lt;/div&gt;&lt;div&gt;- nome: String&lt;/div&gt;&lt;div&gt;- percentualComissaoPadrao: float&lt;/div&gt;" vertex="1">
           <mxGeometry height="56" width="350" y="64" as="geometry" />
         </mxCell>
+        <mxCell id="EZ9PXiC3q6WF-ZMjJYLO-40" edge="1" parent="1" source="EZ9PXiC3q6WF-ZMjJYLO-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="EZ9PXiC3q6WF-ZMjJYLO-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EZ9PXiC3q6WF-ZMjJYLO-41" connectable="0" parent="EZ9PXiC3q6WF-ZMjJYLO-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="refere-se" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EZ9PXiC3q6WF-ZMjJYLO-42" connectable="0" parent="EZ9PXiC3q6WF-ZMjJYLO-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.7887" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EZ9PXiC3q6WF-ZMjJYLO-43" connectable="0" parent="EZ9PXiC3q6WF-ZMjJYLO-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.8036" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="EZ9PXiC3q6WF-ZMjJYLO-32" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ItemPedido" vertex="1">
           <mxGeometry height="118" width="350" x="-5060" y="1459" as="geometry" />
         </mxCell>
