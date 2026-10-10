@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0">
   <diagram name="Página-1" id="1_IcvphOG9MH5CT4vIaf">
-    <mxGraphModel dx="1664" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1571" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -507,8 +507,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Fswq45kzI96pHkEuLCKC-1" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;div&gt;Economia&lt;/div&gt;&lt;div&gt;APS&lt;/div&gt;&lt;div&gt;Redes de Computadores&lt;/div&gt;&lt;div&gt;Extensão II&lt;/div&gt;&lt;div&gt;Mineração de Dados&lt;/div&gt;&lt;div&gt;Sinais e Sistemas Lineares&lt;/div&gt;" vertex="1">
-          <mxGeometry height="120" width="210" x="1195.75" y="60" as="geometry" />
+        <mxCell id="Fswq45kzI96pHkEuLCKC-1" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;div&gt;Economia&lt;/div&gt;&lt;div&gt;APS&lt;/div&gt;&lt;div&gt;Redes de Computadores&lt;/div&gt;&lt;div&gt;Extensão II&lt;/div&gt;&lt;div&gt;Mineração de Dados&lt;/div&gt;&lt;div&gt;Sinais e Sistemas Lineares&lt;/div&gt;&lt;div&gt;Controle de Sistemas Contínuos I (&lt;i&gt;Controle de Sistemas Lineares&lt;/i&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="210" x="1195.75" y="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
